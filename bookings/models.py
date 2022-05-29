@@ -15,7 +15,7 @@ class Technician(models.Model):
 class Customer(models.Model):
     title = models.CharField(max_length=40, unique=True)
     email = models.EmailField(unique=True)
-    phone = models.IntegerField(unique=True)
+    phone = models.CharField(max_length=11, unique=True)
     # address_1 = models.CharField(_("Address line 1"), max_length=100)
     # address_2 = models.CharField(_("Address line 2"), max_length=100)
     # city = models.CharField(_("City/Town"), max_length=30)
