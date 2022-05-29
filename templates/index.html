@@ -8,22 +8,25 @@
         <!-- Technician Cards -->
         <div class="col-12 mt-3 left">
             <div class="row">
-            <!-- For loop to iterate through the list of technicians passed in from the view -->
-            {% for technician in technician_list %} 
+                <!-- For loop to iterate through the list of technicians passed in from the view -->
+                {% for technician in technician_list %}
 
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <div class="card-mb-4">
-                        <div class="card-body"> <!-- everything lives within the card-->
+                        <div class="card-body">
+                            <!-- everything lives within the card-->
                             <div class="image-container">
                                 {% if "placeholder" in technician.featured_image.url %}
                                 <!-- If the word "placeholder is found in the url then assume there is no featured image then image below is used" -->
-                                <img src="https://res.cloudinary.com/millermayhem/image/upload/v1653839799/logo_cd2pdj.png" alt="">
+                                <img src="https://res.cloudinary.com/millermayhem/image/upload/v1653839799/logo_cd2pdj.png"
+                                    alt="">
                                 {% else %}
                                 <img class="card-img-top" src="{{ technician.featured_image.url }}" alt="">
                                 <!-- DOUBLE CURLY BRACES INSERTS THE CONTENT INTO THE HTML -->
                                 {% endif %}
                                 <div class="image-flash">
-                                    <p class="author">Head Technician</p> <!-- Could alternativly add {{ technician.position }} if it was included in the model-->
+                                    <p class="author">Head Technician</p>
+                                    <!-- Could alternativly add {{ technician.position }} if it was included in the model-->
                                 </div>
                                 <a href="#" class="post-link">
                                     <h2 class="card-title">{{ technichian.title }}</h2>
@@ -34,13 +37,13 @@
                     </div>
                 </div>
 
-            <!-- Display technicians in rows of 2 -->
-            {% if forloop.counter|divisibleby:3 %}
+                <!-- Display technicians in rows of 2 -->
+                {% if forloop.counter|divisibleby:3 %}
             </div> <!-- close the row div if its more than 2 technicians-->
 
             <div class="row">
-            {% endif %}
-            {% endfor %}
+                {% endif %}
+                {% endfor %}
             </div>
         </div>
     </div>
