@@ -1,1 +1,1 @@
-web: gunicorn P4-Hannahs-Nails.wsgi
+web: gunicorn hannahs.wsgi
