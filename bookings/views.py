@@ -5,7 +5,6 @@ from .models import Technician
 
 class TechnicianList(generic.ListView):
     model = Technician
-    template_name = 'index.html'
+    template_name = 'booking.html'
     paginate_by = 6
-    # paginate_by wont be used as there will not be more than 6 technicians. This for my reference only
-    
+    # paginate_by wont be used as there will not be more than 6 technicians. This is for my reference only
