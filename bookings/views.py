@@ -11,7 +11,7 @@ class TechnicianList(generic.ListView):
 
 
 def Index(request):
-    # The View function for home page of site
+    # The View function for index/home page of site
     template_name = "index.html"
     context = {}
     return render(request, 'index.html', context=context)
