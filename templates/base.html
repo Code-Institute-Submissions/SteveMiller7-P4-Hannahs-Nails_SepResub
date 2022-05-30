@@ -22,7 +22,7 @@
 
 <body>
 
-    <nav class="navbar bg-light fixed-top">
+    <!-- <nav class="navbar bg-light fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="https://res.cloudinary.com/millermayhem/image/upload/v1653850658/nav_logo_vtza1e.png" alt="Hannahs Nail Bar Logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -36,7 +36,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="{% url 'bookings' %}">Home</a>
+                  <a class="nav-link active" aria-current="page" href="">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="">Inspiration</a>
@@ -51,13 +51,19 @@
             </div>
           </div>
         </div>
-      </nav>
+      </nav> -->
 
     <main class="flex-shrink-0 main-bg">
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
     </main>
+
+  <footer>
+    <div class="container-fluid footer">
+
+    </div>
+  </footer>
 
 
 </body>
