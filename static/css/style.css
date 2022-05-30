@@ -2,8 +2,12 @@ body {
     background-color: #F9FAFC;
 }
 
-.bg {
-    background-image: url(https://res.cloudinary.com/millermayhem/image/upload/v1653835321/ggbvmcsaszv3ehazh3r7.jpg);
+
+.cover-image {
+    background-image: url("https://res.cloudinary.com/millermayhem/image/upload/v1653680270/qfvfvg9refpcwpzi2tnd.jpg");
+    height: 100vph;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .navbar {
