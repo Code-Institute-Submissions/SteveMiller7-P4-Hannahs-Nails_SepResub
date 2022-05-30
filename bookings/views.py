@@ -15,3 +15,9 @@ def Index(request):
     template_name = "index.html"
     context = {}
     return render(request, 'index.html', context=context)
+
+def Inspiration(request):
+    # The View function for index/home page of site
+    template_name = "inspiration.html"
+    context = {}
+    return render(request, 'inspriation.html', context=context)
