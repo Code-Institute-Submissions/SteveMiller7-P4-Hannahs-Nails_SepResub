@@ -1,115 +1,36 @@
 body {
     background-color: #F9FAFC;
+    font-family: 'Open Sans', sans-serif;
 }
 
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
 
 .cover-image {
-    background-image: url("https://res.cloudinary.com/millermayhem/image/upload/v1653680270/qfvfvg9refpcwpzi2tnd.jpg");
-    height: 100vph;
+    height: 100%;
+    position: relative;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.navbar {
-    background-color: slategray;
+.hello-g {
+    text-align: right;
+    font-size: 120px;
+    font-family: 'Playfair Display', serif;
+    line-height: 75%;
+}
+
+.book-button {
+    text-align: left;
 }
 
 .footer {
     background-color: slategray;
-    height: 70px;
-}
-
-
-
-.thin {
-    font-weight: 300;
-}
-
-.light-bg {
-    background-color: #fff;
-}
-
-.dark-bg {
-    background-color: #445261;
-}
-
-.main-bg {
-    background-color: #F9FAFC;
-}
-
-.card {
-    border: none;
-    background-color: transparent;
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #23BBBB;
-}
-
-
-
-
-
-
-.post-link {
-    text-decoration: none;
-    color: #445261;
-}
-
-.post-link:hover,
-.page-link {
-    color: #E84610;
-}
-
-.post-title {
-    margin-top: 20%;
-    margin-left: 5%;
-}
-
-.post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
-}
-
-.btn-signup {
-    background-color: #23BBBB;
-    color: #fff;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
-}
-
-.link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
-}
-
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
+    height: 150px;
 }
