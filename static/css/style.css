@@ -10,10 +10,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.tog {
-    outline: none;
-}
-
 .footer {
     background-color: #f2f2f2;
     height: 200px;
@@ -50,9 +46,10 @@ padding-top: 70px;
 
 .hello-g {
     text-align: right;
-    font-size: 120px;
+    font-size: 100px;
     font-family: 'Playfair Display', serif;
     line-height: 75%;
+    padding-right: 40px ;
 }
 
 .book-button {
@@ -108,8 +105,8 @@ padding-top: 70px;
     text-align: right;
     font-size: 90px;
     font-family: 'Playfair Display', serif;
-    line-height: 110%;
-    padding-top: 100px;
+    line-height: 130%;
+    padding-top: 40px;
     align-items: center;
     margin-right: 50px;
     margin-top: 50px;
@@ -119,12 +116,16 @@ padding-top: 70px;
 /* Inspiration/gallery */
 
 .gallery {
-    margin-top: 200px;
+    margin-top: 80px;
     margin-bottom: 120px;
 }
 
 .image-container {
     position: relative;
+    height: 270px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .card {
@@ -132,5 +133,12 @@ padding-top: 70px;
     background-color: transparent;
 }
 
-
+.memory-title {
+    font-family: 'Playfair Display', serif;
+    color: black;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 50px;
+}
 
