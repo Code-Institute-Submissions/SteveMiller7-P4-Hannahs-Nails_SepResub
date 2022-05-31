@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import Technician
+from .models import Technician, Photo
 
 
 class TechnicianList(generic.ListView):
@@ -16,8 +16,7 @@ def Index(request):
     context = {}
     return render(request, 'index.html', context=context)
 
-def Inspiration(request):
-    # The View function for index/home page of site
-    template_name = "inspiration.html"
-    context = {}
-    return render(request, 'inspriation.html', context=context)
+class Inspiration(generic.ListView):
+    # The View function for inspiration page page of site
+    model = Photo
+    template_name = 'inspiration.html'

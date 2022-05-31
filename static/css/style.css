@@ -10,6 +10,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.tog {
+    outline: none;
+}
+
 .footer {
     background-color: #f2f2f2;
     height: 200px;
@@ -21,6 +25,16 @@ body {
 
 .playfair {
     font-family: 'Playfair Display', serif;
+}
+
+.socials {
+
+color: black;
+font-size: 27px;
+width: auto;
+text-align: center;
+word-spacing: 20vw;
+padding-top: 70px;
 }
 
 
@@ -100,3 +114,23 @@ body {
     margin-right: 50px;
     margin-top: 50px;
 }
+
+
+/* Inspiration/gallery */
+
+.gallery {
+    margin-top: 200px;
+    margin-bottom: 120px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+
+

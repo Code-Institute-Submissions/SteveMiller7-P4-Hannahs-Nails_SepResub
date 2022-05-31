@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid gallery">
+  <div class="row">
+
+    <div class="col-12 mt-3 left">
+      <div class="row">
+        <!-- Loops through photos in list of photos -->
+        {% for photo in photo_list %}
+
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="image-container">
+                {% if "placeholder" in photo.featured_image.url %}
+                <img
+                  src="https://res.cloudinary.com/millermayhem/image/upload/v1653982722/Gallery_Placeholder_rjvxg5.jpg"
+                  alt="">
+                {% else %}
+                <img class="card-img-top" src="{{ photo.featured_image.url }}" alt="">
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- if statement to make photos display in rows of 3 -->
+        {% if forloop.counter|divisibleby:3 %}
+      </div>
+      <div class="row">
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}

@@ -4,7 +4,7 @@ from cloudinary.models import CloudinaryField
 
 
 class Technician(models.Model):
-    title = models.CharField(max_length=40, unique=True)
+    title = models.CharField(max_length=40)
     featured_image = CloudinaryField('image', default='placeholder')
     background_info = models.TextField(max_length=250)
 
@@ -23,3 +23,8 @@ class Customer(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Photo(models.Model):
+    featured_image = CloudinaryField('image', default='placeholder')
+    
