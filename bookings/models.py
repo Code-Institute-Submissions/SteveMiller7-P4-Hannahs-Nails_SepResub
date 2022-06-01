@@ -28,7 +28,7 @@ class Customer(models.Model):
 class Photo(models.Model):
     featured_image = CloudinaryField('image', default='placeholder')
     
-class Scheduler(models.Model):
+class Schedule(models.Model):
 
     unique_together = ('customer', 'date', 'slot')
 
