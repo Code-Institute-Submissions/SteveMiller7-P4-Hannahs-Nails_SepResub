@@ -19,4 +19,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('bookings.urls'), name='bookings_urls'),
     # above is given the name of 'bookings_urls and is for all urls in the bookings folder"
+    path('accounts/', include('allauth.urls')),
 ]
