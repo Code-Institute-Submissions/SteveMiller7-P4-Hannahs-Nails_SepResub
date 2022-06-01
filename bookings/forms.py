@@ -3,7 +3,7 @@ from datetime import date
 from django import forms
 from datetimewidget.widgets import DateTimeWidget
 
-from.models import Schedule
+from .models import Schedule
 
 
 
@@ -12,7 +12,7 @@ class SchedulePage(forms.ModelForm):
 
     class Meta:
         model = Schedule
-        fields = ('date', 'slot', 'customer')
+        fields = ('date', 'slot', 'customer',)
         widgets = {
                 'date': DateTimeWidget(
                     attrs={'id': "date"}, usel10n = True, bootstrap_version=3,

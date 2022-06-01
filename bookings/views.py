@@ -31,4 +31,10 @@ def NewBooking(request):
             return redirect('/')
     else:
         form = SchedulePage()
-    return render(request, 'appointment_bookings.html', {'form': form})
+    return render(
+        request,
+        'appointment_bookings.html',
+        {
+            'form': SchedulePage(),
+        },
+    )

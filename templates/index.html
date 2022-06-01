@@ -12,9 +12,15 @@
             <div class="col">
                 <p>Hello<br>Gorgeous</p>
             </div>
+            {% if user.is_authenticated %}
             <div class="col" style="text-align:center; padding-top: 50px;">
-                <a href="{% url 'account_login' %}"><button type="button" class="btn btn-outline-secondary open-sans text-dark">Book An Appointment</button></a>
+                <a href="{% url 'appointment_bookings' %}"><button type="button" class="btn btn-outline-secondary open-sans text-dark">Book An Appointment</button></a>
             </div>
+            {% else %}
+            <div class="col" style="text-align:center; padding-top: 50px;">
+                <a href="{% url 'account_login' %}"><button type="button" class="btn btn-outline-secondary open-sans text-dark">Member Login</button></a>
+            </div>
+            {% endif %}
         </div>
     </div>
 </div>

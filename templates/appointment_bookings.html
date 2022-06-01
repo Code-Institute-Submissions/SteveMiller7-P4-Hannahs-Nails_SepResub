@@ -2,11 +2,15 @@
 
 {% block content %}
 
+{% load crispy_forms_tags  %}
+
+
+{% if user.is_authenticated %}
 <div class="panel panel-default">
     <div class="panel-body">
         <section id="form-wrapper">
             <form method="POST" class="appointment-form">{% csrf_token %}
-                form.as_p 
+                {{ form.as_p }} 
                 <!-- the aobve form.as_p needs to be in double curly braces but its crashing my page -->
                 <button type="submit" class="btn btn-primary">Save</button>
                 <button type="reset" class="btn btn-default">Reset</button>
@@ -14,5 +18,6 @@
         </section>
     </div>
 </div>
+{% endif %}
 
 {% endblock %}
