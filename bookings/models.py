@@ -28,3 +28,25 @@ class Customer(models.Model):
 class Photo(models.Model):
     featured_image = CloudinaryField('image', default='placeholder')
     
+class Scheduler(models.Model):
+
+    unique_together = ('customer', 'date', 'slot')
+
+    Slots_List = (
+        (0, '9am - 9.45am'),
+        (1, '9.45am - 10.30am'),
+        (2, '10.30am - 11.15am'),
+        (3, '11.15am - 12pm'),
+        (4, '12.30pm - 1.15pm'),
+        (5, '1.15pm - 2pm'),
+        (6, '2pm - 2.45pm'),
+        (7, '2.45pm - 3.30pm'),
+        (8, '3.30pm - 4.15pm'),
+        (7, '4.15pm - 5pm'),
+    )
+
+    date = models.DateField(help_text="YYYY-MM-DD")
+    slot = models.IntegerField(choices=Slots_List)
+    customer = models.ForeignKey('Customer', on_delete = models.CASCADE)
+
+

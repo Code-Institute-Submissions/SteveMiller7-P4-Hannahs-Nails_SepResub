@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Technician, Customer, Photo
+from .models import Technician, Customer, Photo, Scheduler
 
 admin.site.register(Photo)
 admin.site.register(Technician)
@@ -9,3 +9,7 @@ admin.site.register(Technician)
 class CustomerAdmin(admin.ModelAdmin):
     list_display = ('name', 'email', 'phone')
     search_fields = ['name']
+
+@admin.register(Scheduler)
+class SchedulerAdmin(admin.ModelAdmin):
+    list_display = ('customer', 'date', 'slot')
