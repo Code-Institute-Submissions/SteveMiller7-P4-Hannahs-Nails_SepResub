@@ -1,11 +1,12 @@
+from datetime import date
+
 from django import forms
-from django.forms import forms
+from datetimewidget.widgets import DateTimeWidget
 
 from.models import Scheduler
 
 
-class DateInput(forms.DateInput):
-    input_type = 'date'
+
 
 class SchedulePage(forms.ModelForm):
 
@@ -14,12 +15,13 @@ class SchedulePage(forms.ModelForm):
         fields = ('date', 'slot', 'customer')
         widgets = {
                 'date': DateTimeWidget(
+                    attrs={'id': "date"}, usel10n = True, bootstrap_version=3,
                     options={
                         'weekStart': 1,
                         'todayHighlight': True,
-                        'format': yyyy-mm-dd,
+                        'format': 'yyyy-mm-dd',
                         'daysOfTheWeekDisabled': [0, 1],
-                        'startDate': date.today().strtftime('%Y-%m-%d'),
+                        'startDate': date.today().strftime('%Y-%m-%d'),
                     }
                 ),
         }
