@@ -45,7 +45,7 @@ class Scheduler(models.Model):
         (7, '4.15pm - 5pm'),
     )
 
-    date = models.DateField(help_text="YYYY-MM-DD")
+    date = models.DateField(help_text="yyyy-mm-dd")
     slot = models.IntegerField(choices=Slots_List)
     customer = models.ForeignKey('Customer', on_delete = models.CASCADE)
 
