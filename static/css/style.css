@@ -142,3 +142,21 @@ padding-top: 70px;
     margin-top: 50px;
 }
 
+/* signup */
+
+.sign-container {
+    margin-top: 140px;
+    margin-bottom: 140px;
+}
+
+.btn-signup {
+    background-color: #f2f2f2;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #f6b9d5;
+    color: #f2f2f2;
+}
