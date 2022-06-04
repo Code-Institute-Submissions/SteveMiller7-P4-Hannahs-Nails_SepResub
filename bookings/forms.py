@@ -12,7 +12,7 @@ class SchedulePage(forms.ModelForm):
 
     class Meta:
         model = Schedule
-        fields = ('date', 'slot', 'customer',)
+        fields = ('date', 'slot',)
         # widgets = {
         #         'date': DateTimeWidget(
         #             attrs={'id': "date"}, usel10n = True, bootstrap_version=3,
@@ -28,12 +28,12 @@ class SchedulePage(forms.ModelForm):
 
     # Below function stops bookings being made on the day and at weekends
 
-    def clean_date(self):
-        day = self.Cleaned_data['date']
+    # def clean_date(self):
+    #     day = self.Cleaned_data['date']
 
-        if day <= date.today():
-            raise forms.ValidationError('Uh oh! Online bookings cannot be made on the day. Please contact us direct on 01764 660068. Thank you')
-        if day.isweekday() in (0, 1):
-            raise forms.ValidationError ('Oops! We are closed on Sundays and Mondays. Please choose an alternative day. Thank you')
+    #     if day <= date.today():
+    #         raise forms.ValidationError('Uh oh! Online bookings cannot be made on the day. Please contact us direct on 01764 660068. Thank you')
+    #     if day.isweekday() in (0, 6):
+    #         raise forms.ValidationError ('Oops! We are closed on Sundays and Mondays. Please choose an alternative day. Thank you')
 
-            return day
+    #         return day

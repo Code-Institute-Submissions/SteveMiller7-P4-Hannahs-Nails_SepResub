@@ -48,5 +48,3 @@ class Schedule(models.Model):
     date = models.DateField(help_text="yyyy-mm-dd")
     slot = models.IntegerField(choices=Slots_List)
     customer = models.ForeignKey('Customer', on_delete = models.CASCADE)
-
-

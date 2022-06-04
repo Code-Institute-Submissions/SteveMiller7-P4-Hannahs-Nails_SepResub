@@ -169,3 +169,14 @@ padding-top: 70px;
     background-color: #f6b9d5;
     color: #f2f2f2;
 }
+
+/* appointment_bookings.html */
+
+.appointments-title {
+    margin-top: 140px;
+    margin-bottom: 140px;
+    background-color: #f2f2f2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
