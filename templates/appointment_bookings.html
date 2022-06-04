@@ -6,6 +6,8 @@
 
 
 {% if user.is_authenticated %}
+<!-- Make booking for with date and time slots -->
+
 <div class="col-md-4 card mb-4 mt-3">
     <div class="card-body">
         <form method="post" class="appointment-form">
@@ -17,6 +19,8 @@
         </form>
     </div>
 </div>
+
+ <!-- Section to display bookings already made. -->
 {% endif %}
 
 {% endblock %}
