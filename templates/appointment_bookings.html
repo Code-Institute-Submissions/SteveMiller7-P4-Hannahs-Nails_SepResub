@@ -8,14 +8,14 @@
 {% if user.is_authenticated %}
 
 <div class="container-fluid appointments-title">
-    <div class="">
+    <div class="row">
         <h3>Get booked in!</h3>
     </div>
 </div>
 
 <!-- Make booking for with date and time slots -->
 
-<div class="container sign-container">
+<div class="container appointment-container">
     <div class="">
         <form method="post" class="appointment-form" style="text-align: center;">
             {{ form | crispy}}
@@ -28,6 +28,45 @@
     </div>
 </div>
 
+<div class="container-fluid appointments-title ">
+    <div class="row">
+        <h3>My Bookings</h3>
+    </div>
+</div>
+<div class="container-fluid">
+    <div style="padding: 40px; text-align: center;">
+        <p>You have no scheduled appointments</p>
+    </div>
+</div>
+
+
+<div class="container-fluid card-container">
+    <!-- The below cards would appear if a booking is made. Ive added 2 examples to show how it would look  -->
+    <div class="appointment-container ">
+        <div class="card" style="width: 18rem;">
+            <img src="https://res.cloudinary.com/millermayhem/image/upload/v1653982722/Gallery_Placeholder_rjvxg5.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">(Day and Date)</h5>
+                <p class="card-text">Your nails appointment is at:<br>(Time taken from booking)</p>
+                <a href="#" class="btn btn-info">Edit</a>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+    <div class="appointment-container ">
+        <div class="card" style="width: 18rem;">
+            <img src="https://res.cloudinary.com/millermayhem/image/upload/v1653982722/Gallery_Placeholder_rjvxg5.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">(Day and Date)</h5>
+                <p class="card-text">Your nails appointment is at:<br>(Time taken from booking)</p>
+                <a href="#" class="btn btn-info">Edit</a>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- Section to display bookings already made. -->

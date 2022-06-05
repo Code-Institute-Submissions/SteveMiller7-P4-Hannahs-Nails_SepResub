@@ -173,10 +173,23 @@ padding-top: 70px;
 /* appointment_bookings.html */
 
 .appointments-title {
-    margin-top: 140px;
-    margin-bottom: 140px;
+    margin-top: 50px;
+    margin-bottom: 10px;
     background-color: #f2f2f2;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
 }
+
+.appointment-container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    padding: 50px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
