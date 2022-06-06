@@ -13,6 +13,7 @@ class SchedulePage(forms.ModelForm):
     class Meta:
         model = Schedule
         fields = ('date', 'slot',)
+        
         # widgets = {
         #         'date': DateTimeWidget(
         #             attrs={'id': "date"}, usel10n = True, bootstrap_version=3,

@@ -1,14 +1,8 @@
 from django.shortcuts import render, redirect
 from django.views import generic
-from .models import Technician, Photo
+from .models import Photo
 from .forms import SchedulePage
 
-
-class TechnicianList(generic.ListView):
-    model = Technician
-    template_name = 'appointment_bookings.html'
-    paginate_by = 6
-    # paginate_by wont be used as there will not be more than 6 technicians. This for my reference only
 
 
 def Index(request):

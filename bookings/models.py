@@ -3,13 +3,13 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 
-class Technician(models.Model):
-    title = models.CharField(max_length=40)
-    featured_image = CloudinaryField('image', default='placeholder')
-    background_info = models.TextField(max_length=250)
+# class Technician(models.Model):
+#     title = models.CharField(max_length=40)
+#     featured_image = CloudinaryField('image', default='placeholder')
+#     background_info = models.TextField(max_length=250)
 
-    def __str__(self):
-        return self.title
+#     def __str__(self):
+#         return self.title
 
 
 class Customer(models.Model):

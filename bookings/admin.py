@@ -1,8 +1,7 @@
 from django.contrib import admin
-from .models import Technician, Customer, Photo, Schedule
+from .models import Customer, Photo, Schedule
 
 admin.site.register(Photo)
-admin.site.register(Technician)
 
 # admin.ModelAdmin is a built in django class
 @admin.register(Customer)
