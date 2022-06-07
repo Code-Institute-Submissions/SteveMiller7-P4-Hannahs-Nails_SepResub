@@ -3,7 +3,7 @@ from datetime import date
 from django import forms
 from datetimewidget.widgets import DateTimeWidget
 
-from .models import Appointment
+from .models import Appointments
 
 
 # class SchedulePage(forms.ModelForm):
@@ -47,8 +47,8 @@ from .models import Appointment
 class AppointmentForm(forms.ModelForm):
 
     class Meta:
-        model = Appointment
-        fields = ('nail_tech', 'date', 'timeslot', 'phone_number')
+        model = Appointments
+        fields = ('nail_tech', 'date', 'timeslot',)
         widgets = {
             'date': forms.DateInput(
                 attrs={'type': 'date'}

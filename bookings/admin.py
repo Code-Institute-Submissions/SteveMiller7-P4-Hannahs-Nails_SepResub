@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Photo, Appointment, Technician
+from .models import Photo, Appointments, Technician
 
 admin.site.register(Photo)
 
@@ -13,9 +13,9 @@ admin.site.register(Photo)
 # class SchedulerAdmin(admin.ModelAdmin):
 #     list_display = ('date_of', 'slot', 'owner')
 
-class AppointmentAdmin(admin.ModelAdmin):
-    list_display = ['nail_tech', 'date', 'timeslot', 'customer_name', 'phone_number']
+class AppointmentsAdmin(admin.ModelAdmin):
+    list_display = ['nail_tech', 'date', 'timeslot', 'customer_name']
     list_filter = ['nail_tech', ]
 
-admin.site.register(Appointment, AppointmentAdmin)
+admin.site.register(Appointments, AppointmentsAdmin)
 admin.site.register(Technician)
