@@ -37,8 +37,9 @@ def new_appointment(request):
     if request.method == 'POST':
         form = AppointmentForm(request.POST)
         if form.is_valid():
-            # form.customer_name = request.User.username
-            form.save()
+            obj = form.save(commit=False)
+            obj.customer_name = request.user
+            obj.save()
             return redirect('/')
     else:
         form = AppointmentForm()
