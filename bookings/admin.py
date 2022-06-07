@@ -14,7 +14,7 @@ admin.site.register(Photo)
 #     list_display = ('date_of', 'slot', 'owner')
 
 class AppointmentAdmin(admin.ModelAdmin):
-    list_display = ['nail_tech', 'date', 'timeslot', 'customer_name']
+    list_display = ['nail_tech', 'date', 'timeslot', 'customer_name', 'phone_number']
     list_filter = ['nail_tech', ]
 
 admin.site.register(Appointment, AppointmentAdmin)

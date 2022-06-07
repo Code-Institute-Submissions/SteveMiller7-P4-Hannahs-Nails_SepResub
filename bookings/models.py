@@ -57,7 +57,7 @@ class Appointment(models.Model):
     """Contains info about appointment"""
 
     class Meta:
-        unique_together = ('nail_tech', 'date', 'timeslot')
+        unique_together = ('nail_tech', 'date', 'timeslot', 'phone_number',)
 
     TIMESLOT_LIST = (
         (0, '9am - 9.45am'),
@@ -76,9 +76,10 @@ class Appointment(models.Model):
     date = models.DateField(help_text="YYYY-MM-DD")
     timeslot = models.IntegerField(choices=TIMESLOT_LIST)
     customer_name = models.CharField(max_length=60)
+    phone_number = models.CharField(max_length=11, default="Please leave no spaces.")
 
     def __str__(self):
-        return '{} {} {}. Patient: {}'.format(self.date, self.timeslot, self.nail_tech, self.customer_name)
+        return '{} {} {}. Patient: {}'.format(self.date, self.timeslot, self.nail_tech, self.customer_name, slef.phone_number)
 
     @property
     def time(self):

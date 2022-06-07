@@ -48,7 +48,7 @@ class AppointmentForm(forms.ModelForm):
 
     class Meta:
         model = Appointment
-        fields = ('nail_tech', 'date', 'timeslot',)
+        fields = ('nail_tech', 'date', 'timeslot', 'phone_number')
         widgets = {
             'date': forms.DateInput(
                 attrs={'type': 'date'}
@@ -74,6 +74,6 @@ class AppointmentForm(forms.ModelForm):
         if day <= date.today():
             raise forms.ValidationError('Date should be upcoming (tomorrow or later)', code='invalid')
         if day.isoweekday() in (0, 1):
-            raise forms.ValidationError('Date should be a workday', code='invalid')
+            raise forms.ValidationError("Sorry! We are closed on a Sunday and a Monday", code='invalid')
 
         return day
