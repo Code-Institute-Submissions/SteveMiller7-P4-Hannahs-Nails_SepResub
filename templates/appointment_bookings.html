@@ -22,6 +22,7 @@
         <form method="post" class="appointment-form" style="text-align: center;">
             {{ form | crispy}}
             {% csrf_token %}
+
             <button type="submit" class="btn btn-primary" style="margin-top: 30px;">Save</button>
             <br>
             <button type="reset" class="btn btn-default" style="margin-top: 30px;">Reset</button>
@@ -41,36 +42,71 @@
     </div>
 </div>
 
+<!-- My Bookings -->
+
 <div class="container-fluid card-container">
+    <!-- <div class="col-12 mt-3 left">
+        <div class="row">
+            {% for card in bookingcard_list %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="image-container">
+                            <img class="card-img-top"
+                                src="https://res.cloudinary.com/millermayhem/image/upload/v1653982722/Gallery_Placeholder_rjvxg5.jpg">
+                        </div>
+                        <h3 class="card-title">Your nail appointment is on:</h3>
+                        <p class="card-text">{{ card.date }}</p>
+                        <p class="card-text">at<br>{{ card.timeslot }}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% if forloop.counter|divisibleby:4 %}
+        </div>
+        <div class="row">
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div> -->
+
+    
     <!-- The below cards would appear if a booking is made. Ive added 2 examples to show how it would look  -->
-    <div class="appointment-container ">
-        <div class="card" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/millermayhem/image/upload/v1653982722/Gallery_Placeholder_rjvxg5.jpg"
-                class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">(Date)</h5>
+    <div class="row">
+        {% for card in booking_card %}
+        <div class="appointment-container ">
+            <div class="card" style="width: 18rem;">
+                <img src="https://res.cloudinary.com/millermayhem/image/upload/v1653982722/Gallery_Placeholder_rjvxg5.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ </h5>
                 <p class="card-text">Your nails appointment is at:<br>(Time taken from booking)</p>
                 <a href="#" class="btn btn-dark">Edit</a>
                 <button type="button" class="btn btn-danger">Delete</button>
             </div>
         </div>
     </div>
-    <div class="appointment-container ">
-        <div class="card" style="width: 18rem;">
-            <img src="https://res.cloudinary.com/millermayhem/image/upload/v1653982722/Gallery_Placeholder_rjvxg5.jpg"
-                class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">(Date)</h5>
-                <p class="card-text">Your nails appointment is at:<br>(Time taken from booking)</p>
-                <a href="#" class="btn btn-dark">Edit</a>
-                <button type="button" class="btn btn-danger">Delete</button>
-            </div>
-        </div>
+    {% endfor %}
     </div>
 </div>
 
+    <!-- <div class="appointment-container ">
+        <div class="card" style="width: 18rem;">
+            <img src="https://res.cloudinary.com/millermayhem/image/upload/v1653982722/Gallery_Placeholder_rjvxg5.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">(Date)</h5>
+                <p class="card-text">Your nails appointment is at:<br>(Time taken from booking)</p>
+                <a href="#" class="btn btn-dark">Edit</a>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+</div> -->
 
-<!-- Section to display bookings already made. -->
-{% endif %}
 
-{% endblock %}
+    <!-- Section to display bookings already made. -->
+    {% endif %}
+
+    {% endblock %}

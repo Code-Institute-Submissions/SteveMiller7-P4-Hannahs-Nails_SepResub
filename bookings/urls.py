@@ -8,5 +8,6 @@ urlpatterns = [
     # path('appointment_bookings/', views.NewBooking, name="appointment_bookings"),
     path('appointment_bookings/', views.new_appointment, name="appointment_bookings"),
         # Blank path indicates its the default (home page)
+    path('appointmnet_bookings/', views.BookingCard.as_view(), name="booking-card")
 
 ]

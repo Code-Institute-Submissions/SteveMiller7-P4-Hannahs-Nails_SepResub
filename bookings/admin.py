@@ -13,9 +13,11 @@ admin.site.register(Photo)
 # class SchedulerAdmin(admin.ModelAdmin):
 #     list_display = ('date_of', 'slot', 'owner')
 
+@admin.register(Appointments)
 class AppointmentsAdmin(admin.ModelAdmin):
-    list_display = ['nail_tech', 'date', 'timeslot', 'customer_name']
+    list_display = ['nail_tech', 'date', 'timeslot', 'customer_name', 'phone_number']
     list_filter = ['nail_tech', ]
+    search_fields = ['customer_name',]
 
-admin.site.register(Appointments, AppointmentsAdmin)
+# admin.site.register(Appointments, AppointmentsAdmin)
 admin.site.register(Technician)
