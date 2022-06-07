@@ -193,7 +193,8 @@ padding-top: 70px;
 .appointment-container {
     margin-top: 40px;
     text-align: center;
-    padding: 50px;
+    padding-left: 15px;
+    padding-right: 30px;
 }
 
 .card-container {
@@ -203,5 +204,6 @@ padding-top: 70px;
 
   .page-button {
       align-items: center;
+      margin-bottom: 60px;
   }
   

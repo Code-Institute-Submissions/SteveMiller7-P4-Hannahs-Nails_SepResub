@@ -36,15 +36,16 @@ def BookingList(request):
     booking_list = Appointments.objects.all().order_by('date')
     return render(request, 'my_appointments.html', {'booking_list': booking_list})
 
-    
 
 
 
-# class BookingList(generic.ListView):
+
+# class BookingList(models.Model):
 #    template_name = 'my_appointments.html'
 
 #    def get_context_data(self, **kwargs):
 #       context = super().get_context_data(**kwargs)
-#       context['bookings'] = self.request.customer.MyBooking_set.all()
+#       context['bookings'] = self.request.customer_name.booking_set.all()
 #       return context
+
 
