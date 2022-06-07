@@ -4,6 +4,15 @@
     background-color: white;
     opacity: 20%;
 }
+.signed-in-as {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-weight: 200;
+    background-color: rgba(246, 185, 213, 0.9);
+    margin: 20px;
+}
 
 body {
     background-color: #F9FAFC;

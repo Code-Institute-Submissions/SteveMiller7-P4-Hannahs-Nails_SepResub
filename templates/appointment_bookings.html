@@ -22,7 +22,6 @@
         <form method="post" class="appointment-form" style="text-align: center;">
             {{ form | crispy}}
             {% csrf_token %}
-            <!-- the aobve form.as_p needs to be in double curly braces but its crashing my page -->
             <button type="submit" class="btn btn-primary" style="margin-top: 30px;">Save</button>
             <br>
             <button type="reset" class="btn btn-default" style="margin-top: 30px;">Reset</button>
@@ -49,9 +48,9 @@
             <img src="https://res.cloudinary.com/millermayhem/image/upload/v1653982722/Gallery_Placeholder_rjvxg5.jpg"
                 class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">(Day and Date)</h5>
+                <h5 class="card-title">(Date)</h5>
                 <p class="card-text">Your nails appointment is at:<br>(Time taken from booking)</p>
-                <a href="#" class="btn btn-info">Edit</a>
+                <a href="#" class="btn btn-dark">Edit</a>
                 <button type="button" class="btn btn-danger">Delete</button>
             </div>
         </div>
@@ -61,9 +60,9 @@
             <img src="https://res.cloudinary.com/millermayhem/image/upload/v1653982722/Gallery_Placeholder_rjvxg5.jpg"
                 class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">(Day and Date)</h5>
+                <h5 class="card-title">(Date)</h5>
                 <p class="card-text">Your nails appointment is at:<br>(Time taken from booking)</p>
-                <a href="#" class="btn btn-info">Edit</a>
+                <a href="#" class="btn btn-dark">Edit</a>
                 <button type="button" class="btn btn-danger">Delete</button>
             </div>
         </div>
