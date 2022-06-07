@@ -16,19 +16,6 @@ class AppointmentForm(forms.ModelForm):
                 attrs={'type': 'date'}
                 ),
         }
-        # widgets = {
-        #     'date': DateTimeWidget(
-        #         attrs={'id': 'date'}, usel10n=False, bootstrap_version=3,
-        #         options={
-        #             'minView': 2,  # month view
-        #             'maxView': 3,  # year view
-        #             'weekStart': 1,
-        #             'todayHighlight': True,
-        #             'format': 'yyyy-mm-dd',
-        #             'daysOfWeekDisabled': [0, 1],
-        #             'startDate': date.today().strftime('%Y-%m-%d'),
-        #         }),
-        # }
 
     def clean_date(self):
         day = self.cleaned_data['date']

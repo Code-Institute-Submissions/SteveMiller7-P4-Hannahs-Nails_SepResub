@@ -32,7 +32,19 @@ def new_appointment(request):
 
 
 def BookingList(request):
-    # The View function for inspiration page page of site
-    booking_list = Appointments.objects.all()
+    # function bring over booking details from admin site.
+    booking_list = Appointments.objects.all().order_by('date')
     return render(request, 'my_appointments.html', {'booking_list': booking_list})
+
+    
+
+
+
+# class BookingList(generic.ListView):
+#    template_name = 'my_appointments.html'
+
+#    def get_context_data(self, **kwargs):
+#       context = super().get_context_data(**kwargs)
+#       context['bookings'] = self.request.customer.MyBooking_set.all()
+#       return context
 
