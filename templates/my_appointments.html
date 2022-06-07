@@ -7,19 +7,22 @@
 
 {% if user.is_authenticated %}
 
+<div style="height: 50px;"></div>
+
 
 <div class="container-fluid appointments-title ">
     <div class="row">
-        <h3>My Bookings</h3>
+        <h3>My Appointments</h3>
     </div>
 </div>
+
+
 
 <div class="container-fluid">
-    <div style="padding: 40px; text-align: center;">
-        <p>You have no scheduled appointments</p>
+    <div style="padding-top: 70px; text-align: center;">
+        <h4>Your online bookings will appear here</h4>
     </div>
 </div>
-
 
 
 <div class="container-fluid">
@@ -38,7 +41,6 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ booking.date }}</h5>
                                 <p class="card-text">Your nails appointment is at:<br>{{ booking.time }}</p>
-                                <a href="#" class="btn btn-dark">Edit</a>
                                 <button type="button" class="btn btn-danger">Delete</button>
                             </div>
                         </div>
@@ -50,9 +52,6 @@
         </div>
     </div>
 </div>
-
-
-
 
 {% endif %}
 
