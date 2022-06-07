@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load crispy_forms_tags  %}
+
+
+{% if user.is_authenticated %}
+
+
+<div class="container-fluid appointments-title ">
+    <div class="row">
+        <h3>My Bookings</h3>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div style="padding: 40px; text-align: center;">
+        <p>You have no scheduled appointments</p>
+    </div>
+</div>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Booking Cards Generated -->
+        <div class="col-12 mt-1 justify-content-center">
+            <div class="row">
+
+                {% for booking in booking_list %}
+                <div class="col-md-auto center">
+                    <div class="appointment-container ">
+                        <div class="card" style="width: 20em;">
+                            <img src="https://res.cloudinary.com/millermayhem/image/upload/v1653982722/Gallery_Placeholder_rjvxg5.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ booking.date }}</h5>
+                                <p class="card-text">Your nails appointment is at:<br>{{ booking.time }}</p>
+                                <a href="#" class="btn btn-dark">Edit</a>
+                                <button type="button" class="btn btn-danger">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endif %}
+
+{% endblock %}
