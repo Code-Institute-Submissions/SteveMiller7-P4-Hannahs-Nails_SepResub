@@ -23,6 +23,7 @@ def new_appointment(request):
         if form.is_valid():
             obj = form.save(commit=False)
             obj.customer_name = request.user
+            # The above line automatically adds the logged in user to the backend booking when an appointment is made. 
             obj.save()
             return redirect('/')
     else:
@@ -30,7 +31,7 @@ def new_appointment(request):
     return render(request, 'appointment_bookings.html', {'form': form})
 
 
-class BookingCard(generic.ListView):
+class BookingList(generic.ListView):
     # The View function for inspiration page page of site
     model = MyBooking
     template_name = 'appointment_bookings.html'

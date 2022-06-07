@@ -72,16 +72,15 @@
     </div> -->
 
     
-    <!-- The below cards would appear if a booking is made. Ive added 2 examples to show how it would look  -->
     <div class="row">
-        {% for card in booking_card %}
+        {% for booking in mybooking_list %}
         <div class="appointment-container ">
             <div class="card" style="width: 18rem;">
                 <img src="https://res.cloudinary.com/millermayhem/image/upload/v1653982722/Gallery_Placeholder_rjvxg5.jpg"
                     class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">{{ </h5>
-                <p class="card-text">Your nails appointment is at:<br>(Time taken from booking)</p>
+                    <h5 class="card-title">{{ mybooking.date }}/h5>
+                <p class="card-text">Your nails appointment is at:<br></p>
                 <a href="#" class="btn btn-dark">Edit</a>
                 <button type="button" class="btn btn-danger">Delete</button>
             </div>
