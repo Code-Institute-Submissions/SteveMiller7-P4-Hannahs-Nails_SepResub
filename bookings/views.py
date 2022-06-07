@@ -37,8 +37,9 @@ def new_appointment(request):
     if request.method == 'POST':
         form = AppointmentForm(request.POST)
         if form.is_valid():
+            # form.customer_name = request.User.username
             form.save()
-            return redirect('appointment_bookings.html')
+            return redirect('/')
     else:
         form = AppointmentForm()
     return render(request, 'appointment_bookings.html', {'form': form})

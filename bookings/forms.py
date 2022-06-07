@@ -6,38 +6,43 @@ from datetimewidget.widgets import DateTimeWidget
 from .models import Appointment
 
 
-
-
 # class SchedulePage(forms.ModelForm):
 
 #     class Meta:
 #         model = Schedule
-#         fields = ('date', 'slot',)
-        
+#         fields = ('date_of', 'slot',)
 #         widgets = {
-#                 'date': DateTimeWidget(
-#                     attrs={'id': "date"}, usel10n = True, bootstrap_version=3,
-#                     options={
-#                         'weekStart': 1,
-#                         'todayHighlight': True,
-#                         'format': 'yyyy-mm-dd',
-#                         'daysOfTheWeekDisabled': [0, 1],
-#                         'startDate': date.today().strftime('%Y-%m-%d'),
-#                     }
-#                 ),
+#             'date_of': DateInput(),
 #         }
 
-#     # Below function stops bookings being made on the day and at weekends
+        
+        
+        # widgets = {
+        #         'date_of': DateTimeWidget(
+        #             attrs={'id': "date"}, usel10n = True, bootstrap_version=3,
+        #             options={
+        #                 'weekStart': 1,
+        #                 'todayHighlight': True,
+        #                 'format': 'yyyy-mm-dd',
+        #                 'daysOfTheWeekDisabled': [0, 1],
+        #                 'startDate': date.today().strftime('%Y-%m-%d'),
+        #             }
+        #         ),
+        # }
 
-#     def clean_date(self):
-#         day = self.Cleaned_data['date']
+    # Below function stops bookings being made on the day and at weekends
 
-#         if day <= date.today():
-#             raise forms.ValidationError('Uh oh! Online bookings cannot be made on the day. Please contact us direct on 01764 660068. Thank you')
-#         if day.isweekday() in (0, 6):
-#             raise forms.ValidationError ('Oops! We are closed on Sundays and Mondays. Please choose an alternative day. Thank you')
+    # def clean_date(self):
+    #     day = self.Cleaned_data['date']
 
-#             return day
+    #     if day <= date.today():
+    #         raise forms.ValidationError('Uh oh! Online bookings cannot be made on the day. Please contact us direct on 01764 660068. Thank you')
+    #     if day.isweekday() in (0, 6):
+    #         raise forms.ValidationError ('Oops! We are closed on Sundays and Mondays. Please choose an alternative day. Thank you')
+
+    #         return day
+
+
 
 class AppointmentForm(forms.ModelForm):
 
@@ -58,7 +63,7 @@ class AppointmentForm(forms.ModelForm):
         #             'weekStart': 1,
         #             'todayHighlight': True,
         #             'format': 'yyyy-mm-dd',
-        #             'daysOfWeekDisabled': [0, 6],
+        #             'daysOfWeekDisabled': [0, 1],
         #             'startDate': date.today().strftime('%Y-%m-%d'),
         #         }),
         # }
@@ -68,7 +73,7 @@ class AppointmentForm(forms.ModelForm):
 
         if day <= date.today():
             raise forms.ValidationError('Date should be upcoming (tomorrow or later)', code='invalid')
-        if day.isoweekday() in (0, 6):
+        if day.isoweekday() in (0, 1):
             raise forms.ValidationError('Date should be a workday', code='invalid')
 
         return day
