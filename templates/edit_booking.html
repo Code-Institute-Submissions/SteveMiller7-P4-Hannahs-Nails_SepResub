@@ -21,13 +21,21 @@
         <form method="post" class="appointment-form" style="text-align: center;">
             {{ form | crispy}}
             {% csrf_token %}
-
-            <button type="submit" class="btn btn-primary" style="margin-top: 30px;">Save</button>
+            <td>
+                <a href="">
+                    <button type="submit" class="btn btn-primary" style="margin-top: 30px;">Update Booking</button>
+                </a>
+            </td>
             <br>
-            <button type="reset" class="btn btn-default" style="margin-top: 30px;">Reset</button>
+            <td>
+                <a href="">
+                    <button type="reset" class="btn btn-default" style="margin-top: 30px;">Reset</button>
+                </a>
+            </td>
         </form>
         <a href="{% url 'my_appoints' %}">
-            <button type="button" class="btn btn-outline-secondary page-button" style="margin-top: 30px;">My Appointments</button>
+            <button type="button" class="btn btn-outline-secondary page-button" style="margin-top: 30px;">My
+                Appointments</button>
         </a>
     </div>
 </div>

@@ -41,7 +41,16 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ booking.date }}</h5>
                                 <p class="card-text">Your nails appointment is at:<br>{{ booking.time }}</p>
-                                <button type="button" class="btn btn-danger">Delete</button>
+                                <td>
+                                    <a href="/edit/{{ booking.id }}">
+                                        <button type="edit" class="btn btn-secondary">Edit</button>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="">
+                                        <button type="button" class="btn btn-danger">Delete</button>
+                                    </a>
+                                </td>
                             </div>
                         </div>
                     </div>

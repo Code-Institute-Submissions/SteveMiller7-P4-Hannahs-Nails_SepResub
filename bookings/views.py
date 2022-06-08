@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
 from .models import Photo, Appointments
 from .forms import AppointmentForm
@@ -10,6 +10,7 @@ def Index(request):
     template_name = "index.html"
     context = {}
     return render(request, 'index.html', context=context)
+
 
 class Inspiration(generic.ListView):
     # The View function for inspiration page page of site
@@ -36,6 +37,12 @@ def BookingList(request):
     booking_list = Appointments.objects.all().filter(user=request.user).order_by('date')
     return render(request, 'my_appointments.html', {'booking_list': booking_list})
 
+
+def EditBooking(request, booking_id):
+    booking = get_object_or_404(Appointments, id=booking_id)
+    form = AppointmentForm(instance=booking)
+        
+    return render(request, 'edit_booking.html', {'form': form})
 
 
 
