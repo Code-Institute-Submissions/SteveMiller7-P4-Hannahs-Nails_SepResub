@@ -41,6 +41,16 @@ def BookingList(request):
 def EditBooking(request, booking_id):
     booking = get_object_or_404(Appointments, id=booking_id)
     form = AppointmentForm(instance=booking)
+
+    # Post handler
+    if request.method == 'POST':
+        form = AppointmentForm(request.POST, instance=booking)
+        if form.is_valid():
+            obj = form.save(commit=False)
+            obj.user = request.user
+            # The above line automatically adds the logged in users name to the back end booking when an appointment is made. 
+            obj.save()
+            return redirect('/')
         
     return render(request, 'edit_booking.html', {'form': form})
 
