@@ -13,9 +13,17 @@ def Index(request):
 
 
 class Inspiration(generic.ListView):
-    # The View function for inspiration page page of site
+    # The View function for inspiration page of site
     model = Photo
     template_name = 'inspiration.html'
+
+
+
+def PriceList(request):
+    # The View function for index/home page of site
+    template_name = "index.html"
+    context = {}
+    return render(request, 'prices.html', context=context)
 
 
 def new_appointment(request):

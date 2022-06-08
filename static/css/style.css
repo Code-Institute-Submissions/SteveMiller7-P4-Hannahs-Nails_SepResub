@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: #F9FAFC;
+    background-color: white;
     font-family: 'Open Sans', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
@@ -35,14 +35,27 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-.socials {
+/* .socials {
 
 color: black;
-font-size: 27px;
+font-size: 15px;
 width: auto;
 text-align: center;
 word-spacing: 20vw;
 padding-top: 70px;
+} */
+
+.socials {
+
+    font-size: 20px;
+    color: black;
+
+}
+
+.socials:hover {
+
+    color: #f6b9d5;
+    
 }
 
 
@@ -159,6 +172,17 @@ padding-top: 70px;
     padding-top: 50px;
     margin-top: 50px;
 }
+
+
+/* Price List */
+
+.prices-image {
+    width: 90%;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
 
 /* signup */
 
