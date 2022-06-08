@@ -7,22 +7,7 @@
 
 {% if user.is_authenticated %}
 
-<div style="height: 50px;"></div>
-
-
-<div class="container-fluid appointments-title ">
-    <div class="row">
-        <h3>My Appointments</h3>
-    </div>
-</div>
-
-
-
-<div class="container-fluid">
-    <div style="padding-top: 70px; text-align: center;">
-        <h5>Your online bookings will appear here</h5>
-    </div>
-</div>
+<div style="height: 100px;"></div>
 
 
 <div class="container-fluid">
@@ -59,6 +44,14 @@
 
             </div>
         </div>
+    </div>
+</div>
+
+<div class="container appointment-container">
+    <div class="">
+        <a href="{% url 'appointment_bookings' %}">
+            <button type="button" class="btn btn-outline-secondary page-button" style="margin-top: 30px;">Make Booking</button>
+        </a>
     </div>
 </div>
 
