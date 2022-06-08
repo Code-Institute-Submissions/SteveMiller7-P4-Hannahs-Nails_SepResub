@@ -22,7 +22,7 @@ def new_appointment(request):
         form = AppointmentForm(request.POST)
         if form.is_valid():
             obj = form.save(commit=False)
-            obj.user
+            obj.user = request.user
             # The above line automatically adds the logged in users name to the back end booking when an appointment is made. 
             obj.save()
             return redirect('/')

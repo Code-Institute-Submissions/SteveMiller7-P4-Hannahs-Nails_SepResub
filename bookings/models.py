@@ -30,7 +30,7 @@ class Appointments(models.Model):
     nail_tech = models.ForeignKey('Technician',on_delete = models.CASCADE)
     date = models.DateField(help_text="YYYY-MM-DD")
     timeslot = models.IntegerField(choices=TIMESLOT_LIST)
-    # customer_name = models.CharField(max_length=60)
+    # customer_name = models.CharField(max_length=60, default='')
     phone_number = models.CharField(max_length=20, blank=True, null=True, help_text="Required")
     user = models.ForeignKey(User, default='', null=True, on_delete=models.CASCADE,)
 
