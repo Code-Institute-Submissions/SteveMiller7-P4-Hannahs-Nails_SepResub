@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import generic
-from .models import Photo, MyBooking, Appointments
+from .models import Photo, Appointments
 from .forms import AppointmentForm
 
 
@@ -22,7 +22,7 @@ def new_appointment(request):
         form = AppointmentForm(request.POST)
         if form.is_valid():
             obj = form.save(commit=False)
-            obj.customer_name = request.user
+            obj.user
             # The above line automatically adds the logged in users name to the back end booking when an appointment is made. 
             obj.save()
             return redirect('/')
@@ -33,7 +33,7 @@ def new_appointment(request):
 
 def BookingList(request):
     # function bring over booking details from admin site.
-    booking_list = Appointments.objects.all().order_by('date')
+    booking_list = Appointments.objects.all().filter(user=request.user).order_by('date')
     return render(request, 'my_appointments.html', {'booking_list': booking_list})
 
 

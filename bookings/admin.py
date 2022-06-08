@@ -15,9 +15,9 @@ admin.site.register(Photo)
 
 @admin.register(Appointments)
 class AppointmentsAdmin(admin.ModelAdmin):
-    list_display = ['nail_tech', 'date', 'timeslot', 'customer_name', 'phone_number']
+    list_display = ['nail_tech', 'date', 'timeslot', 'user', 'phone_number']
     list_filter = ['nail_tech', ]
-    search_fields = ['customer_name',]
+    search_fields = ['user',]
 
 # admin.site.register(Appointments, AppointmentsAdmin)
 admin.site.register(Technician)

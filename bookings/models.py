@@ -21,7 +21,7 @@ class Appointments(models.Model):
         (3, '11.15am - 12pm'),
         (4, '12.30pm - 1.15pm'),
         (5, '1.15pm - 2pm'),
-        (6, '2pm - 2.45pm'),
+        (6, '2pm - 2.45pm'), 
         (7, '2.45pm - 3.30pm'),
         (8, '3.30pm - 4.15pm'),
         (7, '4.15pm - 5pm'),
@@ -30,11 +30,12 @@ class Appointments(models.Model):
     nail_tech = models.ForeignKey('Technician',on_delete = models.CASCADE)
     date = models.DateField(help_text="YYYY-MM-DD")
     timeslot = models.IntegerField(choices=TIMESLOT_LIST)
-    customer_name = models.CharField(max_length=60)
+    # customer_name = models.CharField(max_length=60)
     phone_number = models.CharField(max_length=20, blank=True, null=True, help_text="Required")
+    user = models.ForeignKey(User, default='', null=True, on_delete=models.CASCADE,)
 
     def __str__(self):
-        return '{} {} {}. Patient: {}'.format(self.date, self.timeslot, self.nail_tech, self.customer_name, self.phone_number,)
+        return '{} {} {}. Patient: {}'.format(self.date, self.timeslot, self.nail_tech, self.user, self.phone_number,)
 
     @property
     def time(self):
@@ -55,12 +56,10 @@ class Technician(models.Model):
         return '{} {}.'.format(self.last_name.title(), self.first_name[0].upper())
    
 
-class MyBooking(models.Model):
-    featured_image = CloudinaryField('image', default='placeholder')
-    customer = models.ForeignKey(
-        User, on_delete=models.CASCADE
-    )
-    date = models.CharField(max_length=200, unique=True)
-    title = models.CharField(max_length=200, unique=True)
-    created_on = models.DateTimeField(auto_now_add=True)
+# class MyBooking(models.Model):
+#     customer = models.ForeignKey(
+#         User, on_delete=models.CASCADE
+#     )
+#     date = Appointments.date
+#     time = Appointments.timeslot
 
