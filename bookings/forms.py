@@ -22,8 +22,7 @@ class AppointmentForm(forms.ModelForm):
 
         if day <= date.today():
             raise forms.ValidationError('Date should be upcoming (tomorrow or later)', code='invalid')
-        if day.isoweekday() in (0, 1):
+        if day.isoweekday() in (1, 7):
             raise forms.ValidationError("Sorry! We are closed on a Sunday and a Monday", code='invalid')
 
         return day
-        
