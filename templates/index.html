@@ -14,11 +14,13 @@
             </div>
             {% if user.is_authenticated %}
             <div class="col" style="text-align:center; padding-top: 50px;">
-                <a href="{% url 'appointment_bookings' %}"><button type="button" class="btn btn-outline-secondary open-sans text-dark book-button">Appointments</button></a>
+                <a href="{% url 'appointment_bookings' %}"><button type="button"
+                        class="btn btn-outline-secondary open-sans text-dark book-button">Appointments</button></a>
             </div>
             {% else %}
             <div class="col" style="text-align:center; padding-top: 50px;">
-                <a href="{% url 'account_login' %}"><button type="button" class="btn btn-outline-secondary open-sans text-dark book-button">Member Login</button></a>
+                <a href="{% url 'account_login' %}"><button type="button"
+                        class="btn btn-outline-secondary open-sans text-dark book-button">Member Login</button></a>
             </div>
             {% endif %}
         </div>
@@ -36,11 +38,21 @@
 
     <div class="row">
         <div class="col info-section">
-            Set in the heart of Auchterarders High Street, Hannah's Nail Bar has a city meets small town vibe!
-            When opening the salon I knew I wanted to create a fun, welcoming space for all clients. From friendly
-            chat, to the bright & airy surroundings, to the pick & mix... not forgetting the catchiest playlists.
-            I love all things nail art and never shy away from an intricate challenge. Once I'm in the creative zone
-            there are no limits!<br>
+            <p>
+                Set in the heart of Auchterarders High Street, Hannah's Nail Bar has a city meets small town vibe!
+                When opening the salon I knew I wanted to create a fun, welcoming space for all clients. From friendly
+                chat, to the bright & airy surroundings, to the pick & mix... not forgetting the catchiest playlists.
+                I love all things nail art and never shy away from an intricate challenge. Once I'm in the creative zone
+                there are no limits!
+            </p>
+            <p>
+                Since opening in 2019 I have been lucky enough to have seen a great number of locals and visitors alike.
+                Whatever your circumstances you are always welcome at my little slice of nail heaven.
+                My doors are open Tuesdays to Saturdays so please feel free to get in touch. <br>
+                See you soon!
+
+            </p>
+
 
         </div>
     </div>
@@ -49,14 +61,18 @@
 <!-- thumbnails photos -->
 
 
-    <div class="row" style="text-align: center;">
-        <div class="col thumbnail-container">
-                <span style="display: inline"><img class="thumbnail" src="https://res.cloudinary.com/millermayhem/image/upload/v1654607910/salon-4_dkxumu.jpg"></span>
-                <span style="display: inline"><img class="thumbnail" src="https://res.cloudinary.com/millermayhem/image/upload/v1654607910/salon-2_ngr6ab.jpg"></span>
-                <span style="display: inline"><img class="thumbnail" src="https://res.cloudinary.com/millermayhem/image/upload/v1654607909/salon-3_rnbgd2.jpg"></span>
-                <span style="display: inline"><img class="thumbnail" src="https://res.cloudinary.com/millermayhem/image/upload/v1654607909/salon-1_uixcdo.jpg"></span>
-        </div>       
+<div class="row" style="text-align: center;">
+    <div class="col thumbnail-container">
+        <span style="display: inline"><img class="thumbnail"
+                src="https://res.cloudinary.com/millermayhem/image/upload/v1654607910/salon-4_dkxumu.jpg"></span>
+        <span style="display: inline"><img class="thumbnail"
+                src="https://res.cloudinary.com/millermayhem/image/upload/v1654607910/salon-2_ngr6ab.jpg"></span>
+        <span style="display: inline"><img class="thumbnail"
+                src="https://res.cloudinary.com/millermayhem/image/upload/v1654607909/salon-3_rnbgd2.jpg"></span>
+        <span style="display: inline"><img class="thumbnail"
+                src="https://res.cloudinary.com/millermayhem/image/upload/v1654607909/salon-1_uixcdo.jpg"></span>
     </div>
+</div>
 
 <!-- about hannah -->
 
