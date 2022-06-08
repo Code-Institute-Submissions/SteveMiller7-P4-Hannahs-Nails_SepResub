@@ -26,3 +26,4 @@ class AppointmentForm(forms.ModelForm):
             raise forms.ValidationError("Sorry! We are closed on a Sunday and a Monday", code='invalid')
 
         return day
+        
