@@ -10,4 +10,5 @@ urlpatterns = [
         # Blank path indicates its the default (home page)
     path('my_appointments/', views.BookingList, name="my_appoints"),
     path('edit/<booking_id>', views.EditBooking, name="edit"),
+    path('delete/<booking_id>', views.DeleteBooking, name="delete"),
 ]

@@ -55,14 +55,9 @@ def EditBooking(request, booking_id):
     return render(request, 'edit_booking.html', {'form': form})
 
 
+def DeleteBooking(request, booking_id):
+    booking = get_object_or_404(Appointments, id=booking_id)
+    booking.delete()
 
-
-# class BookingList(models.Model):
-#    template_name = 'my_appointments.html'
-
-#    def get_context_data(self, **kwargs):
-#       context = super().get_context_data(**kwargs)
-#       context['bookings'] = self.request.customer_name.booking_set.all()
-#       return context
-
+    return redirect('/')
 
