@@ -71,7 +71,7 @@ padding-top: 70px;
 
 .hello-g {
     text-align: right;
-    font-size: 100px;
+    font-size: 80px;
     font-family: 'Playfair Display', serif;
     line-height: 75%;
     padding-right: 40px ;
@@ -117,7 +117,8 @@ padding-top: 70px;
     height: 250px;
     object-fit: cover;
     overflow: hidden;
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     min-width: 250px;
 
 }
