@@ -292,7 +292,7 @@ Here the user will find all of theor future appointments. They have the ability 
 
 ***
 
-## Functionality Testing
+## Performance Testing
 
 ![lighthouse performance results image](https://res.cloudinary.com/millermayhem/image/upload/v1654786967/Screenshot_2022-06-09_at_14.44.46_fueorx.png)
 ![lighthouse performance results image](https://res.cloudinary.com/millermayhem/image/upload/v1654786967/Screenshot_2022-06-09_at_14.50.22_bptfg6.png)
@@ -307,20 +307,30 @@ Improvements were made after testing the site build upon original completion.
 Issues first raised included missing alt attributes on images, a missing aria-label for my toggle burger button on the navbar and image resolution sizes being too big. 
 I had a issue with the low resolution logo in the navbar but i had trouble using a larger image so i reverted back to the original image. 
 
+After ammending the issues raised further tests were carried out and the results were improved.
+
+![lighthouse performance results image](https://res.cloudinary.com/millermayhem/image/upload/v1654787704/Screenshot_2022-06-09_at_16.13.24_uumu03.png)
+![lighthouse performance results image](https://res.cloudinary.com/millermayhem/image/upload/v1654787704/Screenshot_2022-06-09_at_16.14.13_wdpcdm.png)
+
+I still had the issue with the low res logo. I also have original isses with 'Issues logged to the `Issues` panel in Chrome Devtools', but i dont know how to amend them. 
 
 
+## Functionality Testing
 
+Throughout the build manual function tests were carried out constanty to assess whether buttons, links, admin updates etc all worked. Trial and error got me to the results I was after. 
 
+Forms were all tested repeatedly and checked against the admin databse records. 
 
+The booking function works nicely but an improvement I would make is to have the unavailable timeslots in each day nulled. 
 
+Future improvements would also include:
 
-During the design process the site was shown to my fellow students on slack for feedback in style, function and navigation. One suggestion that was made was to incorporate a back to top button for quick access to the nav bar. 
-I added it and styled to suit. 
+- Customise sign up form to remove username, use email as the main login cell along side the password, have email required, phone required, first and last names.
+- Email confirmation of booking chnages to owner and customer.
+- Have the ability to update all personal detaisl.
+- Add a blog page where customers could share experiences and like and comment on images posted of their nails.
 
-When creating my enquiry form I tested it to make sure that the input fields contained the relevant information and displayed a warning message if not. 
+### Automatic Function Testing
 
-On the home page I used an alternative image for phone screens and moved the logo position as the image used for bigger screens didnt work at that size. 
 
 I am very happy with the overall the feel of the site and the smooth flow of functionlity. 
-
-At this point there are no bugs or issues to be resolved.
