@@ -4,6 +4,11 @@
     background-color: white;
     opacity: 20%;
 }
+
+.nav-logo{
+    height: 30px;
+}
+
 .signed-in-as {
     padding-top: 10px;
     padding-bottom: 10px;
