@@ -315,13 +315,28 @@ After ammending the issues raised further tests were carried out and the results
 I still had the issue with the low res logo. I also have original isses with 'Issues logged to the `Issues` panel in Chrome Devtools', but i dont know how to amend them. 
 
 
-## Functionality Testing
+## Manual Functionality Testing
 
 Throughout the build manual function tests were carried out constanty to assess whether buttons, links, admin updates etc all worked. Trial and error got me to the results I was after. 
 
 Forms were all tested repeatedly and checked against the admin databse records. 
 
 The booking function works nicely but an improvement I would make is to have the unavailable timeslots in each day nulled. 
+
+I followed 3 steps in my manual testing procedure.
+
+### White Box Testing
+
+As the developer I thoroughly checked the infrastrcutre and every line of code during the build, when formatting and when running through the code validator. Changes were made where required, when required. All Inputs, links, updates, deletes, edits, navigations, external links and backend additions were checked against output results and everything worked nicely by the end of the build. All bugs were removed and all features work well. 
+
+### Black Box Testing
+
+As well as testing the deployed application myself on iMac, Macbook, iPad and iPhone, I invited 5 other people to perform functionality testing through whatever whatever digital media they had access to. 
+Feedback on UX design, functionality and aesthetics was very positive from the other people testing the site. 
+
+### Grey Box Testing
+
+As mentioned in Black Box Testing I tested the functionality myself using both knowledge of the code and via the deployed site. I found no functional issues myself but did have some future improvments in mind as detailed a little below.
 
 Future improvements would also include:
 
@@ -338,11 +353,6 @@ The site was tested on various devices including:
 - iMac
 - iPad
 - I also tested responsiveness on Google Chrome Dev Tools. 
-
-### Automatic Function Testing
-
-
-I am very happy with the overall the feel of the site and the smooth flow of functionlity. 
 
 
 # Code Validation
