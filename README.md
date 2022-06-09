@@ -364,3 +364,65 @@ CSS validation had no Errors returned after inpouting my CSS file content direct
 [Back to Table of Contents](#table-of-contents)
 
 ***
+
+# Deployment
+
+The project is deployed via Heroku. 
+
+I used Gitpod as a development environment where I commited all changes to git version control system. I used push command in Gitpod to save changes into GitHub.
+
+To deploy the project I had to connect my Github respitory to Heroku through the Heroku 'Deploy' page.
+All of the necessary config vars were created to allow the application to work.
+
+The site is published at https://hannahs-nails.herokuapp.com/ 
+
+To run localy:
+
+- Log in to GitHub and click on repository to download (P4-Hannahs_Nails)
+- select `Code` and click Download the ZIP file.
+- after download you can extract the file and use it in your local environment
+
+Alternatively you can Clone or Fork this repository (P4-Hannahs_Nails) into your github account.
+
+***
+
+# Credits
+
+Initital creation of the project was done using Code Institute student template: 
+- gitpod full template
+
+Ideas and coding guides:
+- www.w3schools.com
+- Diploma in Software Development (E-commerce Applications) from Code Institute.
+- 'I Think Therefore I Blog' Walkthrough via Code Institute
+- 'Hello Django' Walkthrough via Code Institute
+- 'Bootstrap Resume' via Code Institute
+- Github Developer-Felix Doctor---Patient-Scheduler
+- webforefront.com
+- slackoverflow.com
+- docs.djangoproject.com
+- pypi.org
+- pythonguides.com
+- codegrepper.com
+- youtube.com - Max Goodridge
+
+## Content
+
+Information for this website was written by myself and Hannah of Hannah's Nail Bar. Hannah's own images are used.
+
+## Images, Styling, Frameworks
+
+Licensed and royalty free images were taken from:
+- fontawesome.com
+- fonts.google.com
+- mdbootstraps.com
+- bootstrap.com
+- cloudinary.com
+- Adobe stock
+- Adobe Illustrator
+- Adobe Photoshop
+- django
+- django-crispyforms
+- django-allauth
+
+[Back to Table of Contents](#table-of-contents)
