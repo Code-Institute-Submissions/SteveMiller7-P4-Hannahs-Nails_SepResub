@@ -174,6 +174,8 @@ And when authenticated
 ## Header
 
 ![features-header](https://res.cloudinary.com/millermayhem/image/upload/v1654775163/Screenshot_2022-06-09_at_12.45.46_ulm3zw.png)
+![features-off-canvas](https://res.cloudinary.com/millermayhem/image/upload/v1654779889/Screenshot_2022-06-09_at_14.04.08_xqo3he.png)
+![features-off-canvas-logged-in](https://res.cloudinary.com/millermayhem/image/upload/v1654779889/Screenshot_2022-06-09_at_14.04.34_c0zs0n.png)
 
  The header includes two features:
  - Opacity applied image of inside Hannah's shop
@@ -197,4 +199,23 @@ A clean minimal fopoter containing:
 - Title and slogan
 - Usefull links
 - Contact details
+
+## Inspiration / Memory Book
+
+A selection of images from past customers which is customisable from the admin log in offering the owner the ability to keep images
+fresh, rotated and up to date with trends. 
+
+## Price List
+
+A JPeg of the current price list which she has printed and in the salon.
+
+## Authentication
+
+ ![feature-register](https://res.cloudinary.com/millermayhem/image/upload/v1654779787/Screenshot_2022-06-09_at_14.02.14_gmal4j.png)
+ ![features-login](https://res.cloudinary.com/millermayhem/image/upload/v1654779787/Screenshot_2022-06-09_at_14.02.27_r0wtl9.png)
+ ![features-logout](https://res.cloudinary.com/millermayhem/image/upload/v1654779812/Screenshot_2022-06-09_at_14.03.17_wvbwhs.png)
+
+
+The site features the ability to register in order to make, edit and delete bookings.
+The booking features open up once logged in.
 
