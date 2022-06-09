@@ -97,15 +97,15 @@ The site is responsive for all screen sizes and tailored to suit each. The user 
 
 ## Prices
 
-![wireframe-contact](https://res.cloudinary.com/millermayhem/image/upload/v1654772586/Wireframe_Prices-01_nhbb4t.png)
+![wireframe-prices](https://res.cloudinary.com/millermayhem/image/upload/v1654772586/Wireframe_Prices-01_nhbb4t.png)
 
 ## Make A Booking Page
 
-![wireframe-contact](https://res.cloudinary.com/millermayhem/image/upload/v1654772555/Wireframe_Booking_Form-01_a1vcak.png)
+![wireframe-booking-page](https://res.cloudinary.com/millermayhem/image/upload/v1654772555/Wireframe_Booking_Form-01_a1vcak.png)
 
 ## My Bookings
 
-![wireframe-contact](https://res.cloudinary.com/millermayhem/image/upload/v1654772567/Wireframe_My_Bookings-01_d2stc4.png)
+![wireframe-my-bookings](https://res.cloudinary.com/millermayhem/image/upload/v1654772567/Wireframe_My_Bookings-01_d2stc4.png)
 
 
 # Aesthetics
@@ -123,3 +123,51 @@ Softer colours were choesn to create a more relaxing feel to the site. Whites, l
 ## Fonts
 - Open Sans - Google Fonts
 - Playfair Display - Google Fonts
+- 
+
+## Images
+
+No paid assets or royalty images were used in this project, only Hannah's own collection. Future gallery updates will only be images of Hannah's own work. 
+
+[Back to Table of Contents](#table-of-contents)
+
+***
+
+# Features
+
+The website is made up of 8 pages.
+
+- Home
+- Inspiration
+- Prices
+- Register
+- Login
+- Logout
+- Book Appointment
+- My Appointments
+
+Key features are as follows:
+
+## Navigation Bar with Off Canvas
+
+![Fetaure-Navbar](https://res.cloudinary.com/millermayhem/image/upload/v1654774468/Screenshot_2022-06-09_at_12.32.44_nk8o5x.png)
+
+The Navigation Bar is located at the top of each page and is consitent in style throughout the site. 
+
+A business logo is placed to the left and will navigate you to the home page when clicked.
+The burger icon opens the off canvas content which contains navigation links around the site. 
+I decided to have the nav bar stuck to the top of the screen with an opacity applied which has a nice feel.
+
+Links to each page are included for easy navigation to:
+- Home
+- Inspiration
+- Prices
+- Register
+- Login
+
+And when authenticated
+
+- Book An Appointment
+- My Appointments
+- Logout
+
