@@ -330,6 +330,15 @@ Future improvements would also include:
 - Have the ability to update all personal details.
 - Add a blog page where customers could share experiences and like and comment on images posted of their nails.
 
+## Compaitibility testing
+
+The site was tested on various devices including:
+- iPhone
+- Macbook Pro
+- iMac
+- iPad
+- I also tested responsiveness on Google Chrome Dev Tools. 
+
 ### Automatic Function Testing
 
 
