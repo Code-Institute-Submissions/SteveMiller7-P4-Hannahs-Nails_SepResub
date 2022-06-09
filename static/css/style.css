@@ -5,7 +5,7 @@
     opacity: 20%;
 }
 
-.nav-logo{
+.nav-logo {
     height: 30px;
 }
 
@@ -24,7 +24,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
-    
 }
 
 .footer {
@@ -40,27 +39,13 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-/* .socials {
-
-color: black;
-font-size: 15px;
-width: auto;
-text-align: center;
-word-spacing: 20vw;
-padding-top: 70px;
-} */
-
 .socials {
-
     font-size: 20px;
     color: black;
-
 }
 
 .socials:hover {
-
     color: #f6b9d5;
-    
 }
 
 
@@ -79,7 +64,7 @@ padding-top: 70px;
     font-size: 80px;
     font-family: 'Playfair Display', serif;
     line-height: 75%;
-    padding-right: 40px ;
+    padding-right: 40px;
 }
 
 .book-button {
@@ -126,7 +111,6 @@ padding-top: 70px;
     margin-bottom: 30px;
     min-width: 250px;
     margin-right: 30px;
-
 }
 
 .hannah-image {
@@ -231,10 +215,9 @@ padding-top: 70px;
 .card-container {
     display: flex;
     flex-direction: row;
-  }
+}
 
-  .page-button {
-      align-items: center;
-      margin-bottom: 60px;
-  }
-  
+.page-button {
+    align-items: center;
+    margin-bottom: 60px;
+}
