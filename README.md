@@ -344,6 +344,13 @@ I checked my HTML and CSS code using 2 websites.
 
 ![Html validator warning image](https://res.cloudinary.com/millermayhem/image/upload/v1654793074/Screenshot_2022-06-09_at_17.42.36_hflul8.png)
 
+There was a warning left regarding a heading in the footer section but I dont wnat a heading where it suggests.
+
+![CSS validator warning image](https://res.cloudinary.com/millermayhem/image/upload/v1654793532/Screenshot_2022-06-09_at_17.51.37_dkmm7i.png)
+
+
+CSS validation had no Errors returned after inpouting my CSS file content directly on to jigsaw.w3.org
+
 
 [Back to Table of Contents](#table-of-contents)
 
