@@ -150,7 +150,7 @@ Key features are as follows:
 
 ## Navigation Bar with Off Canvas
 
-![Fetaure-Navbar](https://res.cloudinary.com/millermayhem/image/upload/v1654774468/Screenshot_2022-06-09_at_12.32.44_nk8o5x.png)
+![features-Navbar](https://res.cloudinary.com/millermayhem/image/upload/v1654774468/Screenshot_2022-06-09_at_12.32.44_nk8o5x.png)
 
 The Navigation Bar is located at the top of each page and is consitent in style throughout the site. 
 
@@ -171,3 +171,11 @@ And when authenticated
 - My Appointments
 - Logout
 
+## Header
+
+![features-header](https://res.cloudinary.com/millermayhem/image/upload/v1654775163/Screenshot_2022-06-09_at_12.45.46_ulm3zw.png)
+
+ The header includes two features:
+ - Opacity applied image of inside Hannah's shop
+ - 'Hello Gorgeous' title which matches neon sign she has in her salon
+ - Button, which changes from 'Member Login' to 'Appointments' when user is logged in
