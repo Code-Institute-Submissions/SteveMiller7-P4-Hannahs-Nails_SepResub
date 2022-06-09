@@ -317,17 +317,18 @@ I still had the issue with the low res logo. I also have original isses with 'Is
 
 ## Manual Functionality Testing
 
-Throughout the build manual function tests were carried out constanty to assess whether buttons, links, admin updates etc all worked. Trial and error got me to the results I was after. 
+Throughout the build manual function tests were carried out constantly to assess whether buttons, links, admin updates etc all worked. Trial and error got me to the results I was after. 
 
 Forms were all tested repeatedly and checked against the admin databse records. 
 
-The booking function works nicely but an improvement I would make is to have the unavailable timeslots in each day nulled. 
+The booking function works nicely and when changes are made the fields are prepopulated which benefits the user.
 
 I followed 3 steps in my manual testing procedure.
 
 ### White Box Testing
 
-As the developer I thoroughly checked the infrastrcutre and every line of code during the build, when formatting and when running through the code validator. Changes were made where required, when required. All Inputs, links, updates, deletes, edits, navigations, external links and backend additions were checked against output results and everything worked nicely by the end of the build. All bugs were removed and all features work well. 
+As the developer I thoroughly checked the infrastrcutre and every line of code during the build, when formatting code and when running through the code validator. Changes were made where required, when required. All Inputs, links, updates, deletes, edits, navigations, external links, login, logout, registers and backend additions were checked against output results and everything worked nicely by the end of the build. All bugs were removed and all features work well. Information is passed to the database and everything syncs up and corresponds with each other. 
+Admin users can add and remove additional nail technicians should it be required. The image gallery on the inspiration.html page can also be updated by admin users to keep it fresh and inkeeping with current trends"
 
 ### Black Box Testing
 
