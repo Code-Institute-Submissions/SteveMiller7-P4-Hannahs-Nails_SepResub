@@ -220,14 +220,21 @@ The booking features open up once logged in.
 
 ## Book An Appointment
 
-![feature-register](https://res.cloudinary.com/millermayhem/image/upload/v1654780377/Screenshot_2022-06-09_at_14.11.50_t1vxgb.png)
+![feature-book-appointment](https://res.cloudinary.com/millermayhem/image/upload/v1654780377/Screenshot_2022-06-09_at_14.11.50_t1vxgb.png)
  
-This page allows users to book appointments online. It collects a date, timeslot, prefered technician and contact number. If the time slot is already booked on a particular day a message will appear:
+This page allows users to book appointments online. It collects a date, timeslot, prefered technician and contact number. If the time slot is already booked on a particular day a message will appear.
+The page also contains a button to easily navigate the user to their bookings. 
 
-![feature-register](https://res.cloudinary.com/millermayhem/image/upload/v1654780506/Screenshot_2022-06-09_at_14.14.31_t313z1.png)
+![feature-already-booked-warning](https://res.cloudinary.com/millermayhem/image/upload/v1654780506/Screenshot_2022-06-09_at_14.14.31_t313z1.png)
 
 The salon is closed on a Sunday and a Monday so if they try to book on those days another message will appear"
 
 ![feature-register](https://res.cloudinary.com/millermayhem/image/upload/v1654780506/Screenshot_2022-06-09_at_14.14.48_lombsm.png)
 
- 
+## My Appointments
+
+![feature-my-appointments](https://res.cloudinary.com/millermayhem/image/upload/v1654781237/Screenshot_2022-06-09_at_14.26.58_u5kq4j.png)
+
+Here the user will find all of theor future appointments. They have the ability to edit the booking by clicking the 'edit' button or delete it using the 'Delete' button. Pressing the 'Edit' button will take them to booking page which will have the cells prepopulated. If they choose to delete the booking a warning modal will appear asking if they are sure they want to delete the booking. 
+
+![feature-delete-modalhttps://res.cloudinary.com/millermayhem/image/upload/v1654781299/Screenshot_2022-06-09_at_14.27.43_kzhmtq.png]()
