@@ -293,9 +293,26 @@ Here the user will find all of theor future appointments. They have the ability 
 ***
 
 ## Functionality Testing
-Website functionality testing was done using Google Chrome Developer Tools.
 
-This allowed me to regularty test the responsiveness and also idenitify any problems with the format of the site.
+![lighthouse performance results image](https://res.cloudinary.com/millermayhem/image/upload/v1654786967/Screenshot_2022-06-09_at_14.44.46_fueorx.png)
+![lighthouse performance results image](https://res.cloudinary.com/millermayhem/image/upload/v1654786967/Screenshot_2022-06-09_at_14.50.22_bptfg6.png)
+![lighthouse performance results image](https://res.cloudinary.com/millermayhem/image/upload/v1654786967/Screenshot_2022-06-09_at_14.45.57_smcqly.png)
+![lighthouse performance results image](https://res.cloudinary.com/millermayhem/image/upload/v1654786967/Screenshot_2022-06-09_at_14.47.01_mgfxws.png)
+![lighthouse performance results image](https://res.cloudinary.com/millermayhem/image/upload/v1654786967/Screenshot_2022-06-09_at_14.49.28_zeixwc.png)
+
+
+Website functionality testing was done using Google Chrome Developer Tools Lighthouse.
+Improvements were made after testing the site build upon original completion.
+
+Issues first raised included missing alt attributes on images, a missing aria-label for my toggle burger button on the navbar and image resolution sizes being too big. 
+I had a issue with the low resolution logo in the navbar but i had trouble using a larger image so i reverted back to the original image. 
+
+
+
+
+
+
+
 
 During the design process the site was shown to my fellow students on slack for feedback in style, function and navigation. One suggestion that was made was to incorporate a back to top button for quick access to the nav bar. 
 I added it and styled to suit. 
