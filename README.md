@@ -151,6 +151,8 @@ Key features are as follows:
 ## Navigation Bar with Off Canvas
 
 ![features-Navbar](https://res.cloudinary.com/millermayhem/image/upload/v1654774468/Screenshot_2022-06-09_at_12.32.44_nk8o5x.png)
+![features-off-canvas](https://res.cloudinary.com/millermayhem/image/upload/v1654779889/Screenshot_2022-06-09_at_14.04.08_xqo3he.png)
+![features-off-canvas-logged-in](https://res.cloudinary.com/millermayhem/image/upload/v1654779889/Screenshot_2022-06-09_at_14.04.34_c0zs0n.png)
 
 The Navigation Bar is located at the top of each page and is consitent in style throughout the site. 
 
@@ -174,8 +176,6 @@ And when authenticated
 ## Header
 
 ![features-header](https://res.cloudinary.com/millermayhem/image/upload/v1654775163/Screenshot_2022-06-09_at_12.45.46_ulm3zw.png)
-![features-off-canvas](https://res.cloudinary.com/millermayhem/image/upload/v1654779889/Screenshot_2022-06-09_at_14.04.08_xqo3he.png)
-![features-off-canvas-logged-in](https://res.cloudinary.com/millermayhem/image/upload/v1654779889/Screenshot_2022-06-09_at_14.04.34_c0zs0n.png)
 
  The header includes two features:
  - Opacity applied image of inside Hannah's shop
