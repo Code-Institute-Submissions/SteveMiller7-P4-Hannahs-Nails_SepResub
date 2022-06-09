@@ -326,8 +326,8 @@ The booking function works nicely but an improvement I would make is to have the
 Future improvements would also include:
 
 - Customise sign up form to remove username, use email as the main login cell along side the password, have email required, phone required, first and last names.
-- Email confirmation of booking chnages to owner and customer.
-- Have the ability to update all personal detaisl.
+- Email confirmation of booking changes to nail tech and customer.
+- Have the ability to update all personal details.
 - Add a blog page where customers could share experiences and like and comment on images posted of their nails.
 
 ### Automatic Function Testing
