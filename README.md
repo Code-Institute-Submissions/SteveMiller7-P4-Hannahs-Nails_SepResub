@@ -334,3 +334,17 @@ Future improvements would also include:
 
 
 I am very happy with the overall the feel of the site and the smooth flow of functionlity. 
+
+
+# Code Validation
+
+I checked my HTML and CSS code using 2 websites.
+- validator.w3.org
+- jigsaw.w3.org
+
+![Html validator warning image](https://res.cloudinary.com/millermayhem/image/upload/v1654793074/Screenshot_2022-06-09_at_17.42.36_hflul8.png)
+
+
+[Back to Table of Contents](#table-of-contents)
+
+***
