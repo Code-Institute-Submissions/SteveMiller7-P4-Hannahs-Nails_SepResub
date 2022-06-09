@@ -192,7 +192,7 @@ Offering backround information onthe salon and Hannah as well as some images to 
 
 ## Footer
 
- ![features-footer](https://res.cloudinary.com/millermayhem/image/upload/v1654775569/Screenshot_2022-06-09_at_12.52.36_ywixao.png)
+![features-footer](https://res.cloudinary.com/millermayhem/image/upload/v1654775569/Screenshot_2022-06-09_at_12.52.36_ywixao.png)
 
 A clean minimal fopoter containing:
 - Social media links
@@ -211,11 +211,23 @@ A JPeg of the current price list which she has printed and in the salon.
 
 ## Authentication
 
- ![feature-register](https://res.cloudinary.com/millermayhem/image/upload/v1654779787/Screenshot_2022-06-09_at_14.02.14_gmal4j.png)
- ![features-login](https://res.cloudinary.com/millermayhem/image/upload/v1654779787/Screenshot_2022-06-09_at_14.02.27_r0wtl9.png)
- ![features-logout](https://res.cloudinary.com/millermayhem/image/upload/v1654779812/Screenshot_2022-06-09_at_14.03.17_wvbwhs.png)
-
+![feature-register](https://res.cloudinary.com/millermayhem/image/upload/v1654779787/Screenshot_2022-06-09_at_14.02.14_gmal4j.png)
+![features-login](https://res.cloudinary.com/millermayhem/image/upload/v1654779787/Screenshot_2022-06-09_at_14.02.27_r0wtl9.png)
+![features-logout](https://res.cloudinary.com/millermayhem/image/upload/v1654779812/Screenshot_2022-06-09_at_14.03.17_wvbwhs.png)
 
 The site features the ability to register in order to make, edit and delete bookings.
 The booking features open up once logged in.
 
+## Book An Appointment
+
+![feature-register](https://res.cloudinary.com/millermayhem/image/upload/v1654780377/Screenshot_2022-06-09_at_14.11.50_t1vxgb.png)
+ 
+This page allows users to book appointments online. It collects a date, timeslot, prefered technician and contact number. If the time slot is already booked on a particular day a message will appear:
+
+![feature-register](https://res.cloudinary.com/millermayhem/image/upload/v1654780506/Screenshot_2022-06-09_at_14.14.31_t313z1.png)
+
+The salon is closed on a Sunday and a Monday so if they try to book on those days another message will appear"
+
+![feature-register](https://res.cloudinary.com/millermayhem/image/upload/v1654780506/Screenshot_2022-06-09_at_14.14.48_lombsm.png)
+
+ 
