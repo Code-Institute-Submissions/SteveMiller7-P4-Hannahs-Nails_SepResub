@@ -378,11 +378,11 @@ The site is published at https://hannahs-nails.herokuapp.com/
 
 To run localy:
 
-- Log in to GitHub and click on repository to download (P4-Hannahs_Nails)
+- Log in to GitHub and click on repository to download (P4-Hannahs-Nails)
 - select `Code` and click Download the ZIP file.
 - after download you can extract the file and use it in your local environment
 
-Alternatively you can Clone or Fork this repository (P4-Hannahs_Nails) into your github account.
+Alternatively you can Clone or Fork this repository (P4-Hannahs-Nails) into your github account.
 
 ***
 
