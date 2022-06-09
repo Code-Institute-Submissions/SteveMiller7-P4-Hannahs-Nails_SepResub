@@ -13,13 +13,13 @@
             </div>
             {% if user.is_authenticated %}
             <div class="col" style="text-align:center; padding-top: 50px;">
-                <a href="{% url 'appointment_bookings' %}" type="button"
-                        class="btn btn-outline-secondary open-sans text-dark book-button">Appointments</a>
+                <button onclick="location.href='{% url 'appointment_bookings' %}'" type="button"
+                        class="btn btn-outline-secondary open-sans text-dark book-button">Appointments</button>
             </div>
             {% else %}
             <div class="col" style="text-align:center; padding-top: 50px;">
-                <a href="{% url 'account_login' %}" type="button"
-                        class="btn btn-outline-secondary open-sans text-dark book-button">Member Login</a>
+                <button onclick="location.href='{% url 'account_login' %}'" type="button"
+                        class="btn btn-outline-secondary open-sans text-dark book-button">Member Login</button>
             </div>
             {% endif %}
         </div>
