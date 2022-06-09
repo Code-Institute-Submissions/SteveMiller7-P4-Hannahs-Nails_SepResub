@@ -15,18 +15,17 @@
     </div>
 </div>
 
-
 <div class="container appointment-container">
     <div class="">
         <form method="post" class="appointment-form" style="text-align: center;">
             {{ form | crispy}}
             {% csrf_token %}
             <td>
-                    <button type="submit" class="btn btn-primary" style="margin-top: 30px;">Update Booking</button>
+                <button type="submit" class="btn btn-primary" style="margin-top: 30px;">Update Booking</button>
             </td>
             <br>
             <td>
-                    <button type="reset" class="btn btn-default" style="margin-top: 30px;">Reset</button>
+                <button type="reset" class="btn btn-default" style="margin-top: 30px;">Reset</button>
             </td>
         </form>
         <a href="{% url 'my_appoints' %}">
