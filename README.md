@@ -106,3 +106,20 @@ The site is responsive for all screen sizes and tailored to suit each. The user 
 ## My Bookings
 
 ![wireframe-contact](https://res.cloudinary.com/millermayhem/image/upload/v1654772567/Wireframe_My_Bookings-01_d2stc4.png)
+
+
+# Aesthetics
+
+The overall look of the site was created with the aim of being clean, soft, professional and modern.
+
+Softer colours were choesn to create a more relaxing feel to the site. Whites, lights greys and soft pinks reflect the clean image of the salon. Toned down images for backgrounds where required match the soft feel.
+
+## Colour Palette
+- Soft Pink Hex #f6b9d5
+- Light Grey Hex #f2f2f2
+- White
+- Black
+
+## Fonts
+- Open Sans - Google Fonts
+- Playfair Display - Google Fonts
