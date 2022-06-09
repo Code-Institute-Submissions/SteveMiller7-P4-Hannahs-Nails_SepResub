@@ -9,6 +9,12 @@
 
 <div style="height: 100px;"></div>
 
+<div class="container-fluid appointments-title">
+    <div class="row">
+        <h3>My Appointments</h3>
+    </div>
+</div>
+
 <div class="container-fluid">
     <div class="row">
 
@@ -26,14 +32,12 @@
                                 <h5 class="card-title">{{ booking.date }}</h5>
                                 <p class="card-text">Your nails appointment is at:<br>{{ booking.time }}</p>
                                 <td>
-                                    <a href="/edit/{{ booking.id }}">
-                                        <button type="edit" class="btn btn-secondary">Edit</button>
+                                    <a href="/edit/{{ booking.id }}" type="edit" class="btn btn-secondary">Edit
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="/delete/{{ booking.id }}">
-                                        <button type="button" class="btn btn-danger"
-                                            onclick="return confirm('Are you sure you want to delete your booking?');">Delete</button>
+                                    <a href="/delete/{{ booking.id }}" type="button" class="btn btn-danger"
+                                            onclick="return confirm('Are you sure you want to delete your booking?');">Delete
                                     </a>
                                 </td>
                             </div>
@@ -48,10 +52,8 @@
 
 <div class="container appointment-container">
     <div class="">
-        <a href="{% url 'appointment_bookings' %}">
-            <button type="button" class="btn btn-outline-secondary page-button" style="margin-top: 30px;">Make
-                Booking</button>
-        </a>
+        <a href="{% url 'appointment_bookings' %}" type="button" class="btn btn-outline-secondary page-button"
+            style="margin-top: 30px;">Make Booking</a>
     </div>
 </div>
 
