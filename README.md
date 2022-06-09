@@ -93,7 +93,7 @@ The site is responsive for all screen sizes and tailored to suit each. The user 
 
 ## Gallery Page
 
-![wireframe-gallery]([https://i.imgur.com/ILBYP7e.png](https://res.cloudinary.com/millermayhem/image/upload/v1654772501/Wireframe_Image_Gallery-01_wrcj8d.png))
+![wireframe-gallery](https://res.cloudinary.com/millermayhem/image/upload/v1654772501/Wireframe_Image_Gallery-01_wrcj8d.png)
 
 ## Prices
 
