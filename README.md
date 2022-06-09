@@ -227,7 +227,7 @@ The page also contains a button to easily navigate the user to their bookings.
 
 ![feature-already-booked-warning](https://res.cloudinary.com/millermayhem/image/upload/v1654780506/Screenshot_2022-06-09_at_14.14.31_t313z1.png)
 
-The salon is closed on a Sunday and a Monday so if they try to book on those days another message will appear"
+The salon is closed on a Sunday and a Monday so if they try to book on those days another message will appear
 
 ![feature-register](https://res.cloudinary.com/millermayhem/image/upload/v1654780506/Screenshot_2022-06-09_at_14.14.48_lombsm.png)
 
@@ -237,4 +237,53 @@ The salon is closed on a Sunday and a Monday so if they try to book on those day
 
 Here the user will find all of theor future appointments. They have the ability to edit the booking by clicking the 'edit' button or delete it using the 'Delete' button. Pressing the 'Edit' button will take them to booking page which will have the cells prepopulated. If they choose to delete the booking a warning modal will appear asking if they are sure they want to delete the booking. 
 
-![feature-delete-modalhttps://res.cloudinary.com/millermayhem/image/upload/v1654781299/Screenshot_2022-06-09_at_14.27.43_kzhmtq.png]()
+![feature-delete-modal](https://res.cloudinary.com/millermayhem/image/upload/v1654781299/Screenshot_2022-06-09_at_14.27.43_kzhmtq.png])
+
+
+[Back to Table of Contents](#table-of-contents)
+
+***
+
+# Technologies Used
+
+## HTML 5
+- Structure Language
+
+## CSS
+- Styling Language
+
+## Bootstraps
+- Frontend frameworks
+
+## Django
+- Database framework
+
+## Google Fonts
+- As a font resource.
+
+## Font Awesome
+- Social media icons
+
+## Github
+- As a software hosting platform.
+
+## Gitpod
+- For code development.
+
+## Heroku
+- App Hosting platform
+
+## Postgres
+- Database
+
+## Adobe Illustrator
+- Logo creation
+- PNG and JPEG production
+- Wireframes
+- Readme images
+
+## Photoshop
+- Screens mockup image
+
+## Cloudinary
+- Image hosting
