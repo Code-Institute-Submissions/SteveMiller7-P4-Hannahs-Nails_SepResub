@@ -55,3 +55,54 @@ Aesthetically, the aim was to create a clean, soft, user friendly site to tie in
 
 
 ***
+
+# Website Objectives
+The primary function of this website is to promote Hannah's business and boost an already thriving customer base with the introduction of a booking system.
+Presentation of essential information such as prices, contact details, past work is also a big factor. Currently the business is promoted through social media pages but now a more all rounded professional image can be portrayed. 
+
+## New User Benefits
+
+- Obtain information on the business
+- Find contact details
+- View gallery images of past work
+- Access the companies social media sites
+- Be introduced to Hannah
+- Create an account
+- Book an appointment
+
+## Returning User Advantages
+
+- Edit and delete appointments as required
+- See the ever changing image gallery updated regulalry by Hannah through the admin site
+- Refresh knowledge on the companies services
+- Access social media accounts to leave feedback on services
+
+***
+
+# Website Layout
+
+The wireframe layouts were created using Adobe Illustrator. 
+It has been desinged to be clean, soft, professional and as user friendly as possible with the use of simple sight navigation links.
+Accessibility has been carefully considered with the use of cointrasting colours and alt text equivalents for the visually immpared. 
+The site is responsive for all screen sizes and tailored to suit each. The user experince will be smooth and satisfying accros all devices. 
+
+# Wireframes
+
+## Home Page
+![wireframe-home](https://res.cloudinary.com/millermayhem/image/upload/v1654772491/Wireframe_Home-01_wzzug3.png)
+
+## Gallery Page
+
+![wireframe-gallery]([https://i.imgur.com/ILBYP7e.png](https://res.cloudinary.com/millermayhem/image/upload/v1654772501/Wireframe_Image_Gallery-01_wrcj8d.png))
+
+## Prices
+
+![wireframe-contact](https://res.cloudinary.com/millermayhem/image/upload/v1654772586/Wireframe_Prices-01_nhbb4t.png)
+
+## Make A Booking Page
+
+![wireframe-contact](https://res.cloudinary.com/millermayhem/image/upload/v1654772555/Wireframe_Booking_Form-01_a1vcak.png)
+
+## My Bookings
+
+![wireframe-contact](https://res.cloudinary.com/millermayhem/image/upload/v1654772567/Wireframe_My_Bookings-01_d2stc4.png)
