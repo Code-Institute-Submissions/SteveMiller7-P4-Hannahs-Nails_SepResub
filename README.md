@@ -397,6 +397,7 @@ Ideas and coding guides:
 - 'I Think Therefore I Blog' Walkthrough via Code Institute
 - 'Hello Django' Walkthrough via Code Institute
 - 'Bootstrap Resume' via Code Institute
+- Bad_Dog_Portfolio_1 done through Code Institute
 - Github Developer-Felix Doctor---Patient-Scheduler
 - webforefront.com
 - slackoverflow.com
