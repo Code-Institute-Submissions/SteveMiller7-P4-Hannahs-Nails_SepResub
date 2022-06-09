@@ -10,7 +10,7 @@ My website presents Hannah's Nail Bar. Based in Auchterarder, Perthshire, Scotla
 able to find information on the salon and hannah herself. Images of past work are presented in the Inspiration page.
 Information on prices as well as the option to create a user account, make, amend and delete online bookings are also available. 
 
-This is a full stack data model web application structured using Django and Bootstraps and featuring authentication and permissions features.  
+This is a responsive full stack data model web application structured using Django and Bootstraps and featuring authentication and permissions features.  
 
 Contact information can be found in the footer of each page along side social media links and site navigation links.
 
@@ -179,3 +179,22 @@ And when authenticated
  - Opacity applied image of inside Hannah's shop
  - 'Hello Gorgeous' title which matches neon sign she has in her salon
  - Button, which changes from 'Member Login' to 'Appointments' when user is logged in
+
+## Information Section
+
+Offering backround information onthe salon and Hannah as well as some images to match.
+ 
+ - Salon information labelled 'The Sanctuary'
+ - Thumbnail images of the salon
+ - Hannah information section with image and title
+
+## Footer
+
+ ![features-footer](https://res.cloudinary.com/millermayhem/image/upload/v1654775569/Screenshot_2022-06-09_at_12.52.36_ywixao.png)
+
+A clean minimal fopoter containing:
+- Social media links
+- Title and slogan
+- Usefull links
+- Contact details
+
