@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
 from .models import Photo, Appointments
 from .forms import AppointmentForm
+from django.contrib import messages
 
 
 
@@ -34,6 +35,7 @@ def new_appointment(request):
             obj.user = request.user
             # The above line automatically adds the logged in users name to the back end booking when an appointment is made. 
             obj.save()
+            messages.add_message(request, messages.SUCCESS, 'Your appointment has been made. Thank you.')
             return redirect('/')
     else:
         form = AppointmentForm()
@@ -58,6 +60,7 @@ def EditBooking(request, booking_id):
             obj.user = request.user
             # The above line automatically adds the logged in users name to the back end booking when an appointment is made. 
             obj.save()
+            messages.add_message(request, messages.INFO, 'Your appointment has been changed. Thank you.')
             return redirect('/')
         
     return render(request, 'edit_booking.html', {'form': form})
@@ -65,6 +68,7 @@ def EditBooking(request, booking_id):
 
 def DeleteBooking(request, booking_id):
     booking = get_object_or_404(Appointments, id=booking_id)
+    messages.add_message(request, messages.SUCCESS, 'Your appointment has been deleted. Thank you.')
     booking.delete()
 
     return redirect('/')
