@@ -216,8 +216,11 @@ A JPeg of the current price list which she has printed and in the salon.
 ![features-login](https://res.cloudinary.com/millermayhem/image/upload/v1654779787/Screenshot_2022-06-09_at_14.02.27_r0wtl9.png)
 ![features-logout](https://res.cloudinary.com/millermayhem/image/upload/v1654779812/Screenshot_2022-06-09_at_14.03.17_wvbwhs.png)
 
-The site features the ability to register in order to make, edit and delete bookings.
-The booking features open up once logged in.
+The site includes the ability to register and log in.
+Additional features open up once logged in. These include the ability to make, edit and delete bookings.
+Customers will add a username along with a password. When making a booking a phone number is to be added to the form.
+All of the information is stored on a database. This is a heroku postgres database which is secured using a secret key. This key cannot be found anywhere
+in the source code and is stored in heroku along with the database url.
 
 ## Book An Appointment
 
