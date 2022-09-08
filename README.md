@@ -248,6 +248,21 @@ Here the user will find all of theor future appointments. They have the ability 
 ![messages](https://res.cloudinary.com/millermayhem/image/upload/v1662657546/Hannah/Screenshot_2022-09-08_at_18.10.02_wivw3b.png)
 ![messages](https://res.cloudinary.com/millermayhem/image/upload/v1662657556/Hannah/Screenshot_2022-09-08_at_18.12.01_eszf2i.png)
 ![messages](https://res.cloudinary.com/millermayhem/image/upload/v1662657576/Hannah/Screenshot_2022-09-08_at_18.12.32_sg0kr5.png)
+![messages](https://res.cloudinary.com/millermayhem/image/upload/v1662658814/Hannah/Screenshot_2022-09-08_at_18.39.03_pob0yk.png)
+
+When users carry out a particular action on the site messages will appear to inform them of successfull and failed operations.
+
+Success messages will include:
+- Registering a username
+- Logging in
+- Logging out
+- Making an appointment
+- Editing an appointment
+- Deleting an appointment
+
+Error messages will appear when:
+- A user tries to book an appointment on a time that isn't suitable.
+- A user tries to edit an appointment to an unsuitable time.
 
 
 [Back to Table of Contents](#table-of-contents)
