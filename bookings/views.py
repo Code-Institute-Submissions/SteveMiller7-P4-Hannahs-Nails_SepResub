@@ -62,7 +62,7 @@ def EditBooking(request, booking_id):
             obj.user = request.user
             # The above line automatically adds the logged in users name to the back end booking when an appointment is made. 
             obj.save()
-            messages.add_message(request, messages.INFO, 'Your appointment has been changed. Thank you.')
+            messages.add_message(request, messages.SUCCESS, 'Your appointment has been changed. Thank you.')
             return redirect('/')
         else:
             messages.add_message(request, messages.ERROR, 'Your appointment was not changed, Please try again.')
