@@ -37,6 +37,8 @@ def new_appointment(request):
             obj.save()
             messages.add_message(request, messages.SUCCESS, 'Your appointment has been made. Thank you.')
             return redirect('/')
+        else:
+            messages.add_message(request, messages.ERROR, 'Your appointment was not made, Please try again.')
     else:
         form = AppointmentForm()
     return render(request, 'appointment_bookings.html', {'form': form})
@@ -62,6 +64,8 @@ def EditBooking(request, booking_id):
             obj.save()
             messages.add_message(request, messages.INFO, 'Your appointment has been changed. Thank you.')
             return redirect('/')
+        else:
+            messages.add_message(request, messages.ERROR, 'Your appointment was not changed, Please try again.')
         
     return render(request, 'edit_booking.html', {'form': form})
 
