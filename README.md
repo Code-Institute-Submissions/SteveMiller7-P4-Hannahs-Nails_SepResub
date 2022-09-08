@@ -44,6 +44,7 @@ Aesthetically, the aim was to create a clean, soft, user friendly site to tie in
   - User Authentication - Register, Login and Logout
   - Make A Booking
   - My Bookings
+  - Messages
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
   - Functionality Testing
@@ -238,6 +239,10 @@ The salon is closed on a Sunday and a Monday so if they try to book on those day
 Here the user will find all of theor future appointments. They have the ability to edit the booking by clicking the 'edit' button or delete it using the 'Delete' button. Pressing the 'Edit' button will take them to booking page which will have the cells prepopulated. If they choose to delete the booking a warning modal will appear asking if they are sure they want to delete the booking. 
 
 ![feature-delete-modal](https://res.cloudinary.com/millermayhem/image/upload/v1654781299/Screenshot_2022-06-09_at_14.27.43_kzhmtq.png)
+
+## Messages
+
+![messages](https://res.cloudinary.com/millermayhem/image/upload/v1662657496/Hannah/Screenshot_2022-09-08_at_18.14.36_xlda4o.png,https://res.cloudinary.com/millermayhem/image/upload/v1662657512/Hannah/Screenshot_2022-09-08_at_18.13.04_zzgjws.png)
 
 
 [Back to Table of Contents](#table-of-contents)
