@@ -242,7 +242,12 @@ Here the user will find all of theor future appointments. They have the ability 
 
 ## Messages
 
-![messages](https://res.cloudinary.com/millermayhem/image/upload/v1662657496/Hannah/Screenshot_2022-09-08_at_18.14.36_xlda4o.png,https://res.cloudinary.com/millermayhem/image/upload/v1662657512/Hannah/Screenshot_2022-09-08_at_18.13.04_zzgjws.png)
+![messages](https://res.cloudinary.com/millermayhem/image/upload/v1662657496/Hannah/Screenshot_2022-09-08_at_18.14.36_xlda4o.png)
+![messages](https://res.cloudinary.com/millermayhem/image/upload/v1662657512/Hannah/Screenshot_2022-09-08_at_18.13.04_zzgjws.png)
+![messages](https://res.cloudinary.com/millermayhem/image/upload/v1662657532/Hannah/Screenshot_2022-09-08_at_18.10.44_ub4fz8.png)
+![messages](https://res.cloudinary.com/millermayhem/image/upload/v1662657546/Hannah/Screenshot_2022-09-08_at_18.10.02_wivw3b.png)
+![messages](https://res.cloudinary.com/millermayhem/image/upload/v1662657556/Hannah/Screenshot_2022-09-08_at_18.12.01_eszf2i.png)
+![messages](https://res.cloudinary.com/millermayhem/image/upload/v1662657576/Hannah/Screenshot_2022-09-08_at_18.12.32_sg0kr5.png)
 
 
 [Back to Table of Contents](#table-of-contents)
